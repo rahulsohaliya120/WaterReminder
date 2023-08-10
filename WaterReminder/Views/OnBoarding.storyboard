@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aXv-BC-48e">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Fredoka-Medium.ttf">
+            <string>Fredoka-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--On BoardingVC-->
+        <scene sceneID="W7f-t4-kiV">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingVC" id="Bnk-sX-uLG" customClass="OnBoardingVC" customModule="WaterReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IhI-Lx-dFy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_onboardingWaterdrops" translatesAutoresizingMaskIntoConstraints="NO" id="7pX-A9-tXt">
+                                <rect key="frame" x="0.0" y="84" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="uYJ-eW-U8X"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let me help you keep hydarted and healthy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPi-yr-sJK">
+                                <rect key="frame" x="94" y="414" width="226" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="FxJ-K5-bUb"/>
+                                    <constraint firstAttribute="height" constant="70" id="Grm-7e-tfO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Fredoka-Medium" family="Fredoka" pointSize="20"/>
+                                <color key="textColor" red="0.1058823529" green="0.68235294120000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In order to provide tailored hydration advice, I need to get some basic information. And I'll keep this a secret." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuP-UI-UzO">
+                                <rect key="frame" x="61" y="492" width="292" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5GT-Io-pTh"/>
+                                    <constraint firstAttribute="width" constant="292" id="GsO-RI-FxH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                <color key="textColor" red="0.56470588239999997" green="0.56470588239999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83d-n9-x3u" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="50" y="782" width="314" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="V5L-7c-jUT"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="LET'S GO" cornerStyle="capsule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="6NE-dM-F4k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iRB-dK-Kf0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iRB-dK-Kf0" firstAttribute="trailing" secondItem="83d-n9-x3u" secondAttribute="trailing" constant="50" id="3um-Pv-ZUY"/>
+                            <constraint firstItem="dPi-yr-sJK" firstAttribute="top" secondItem="7pX-A9-tXt" secondAttribute="bottom" constant="30" id="Bsj-GC-nKV"/>
+                            <constraint firstItem="7pX-A9-tXt" firstAttribute="top" secondItem="iRB-dK-Kf0" secondAttribute="top" constant="40" id="LCw-wF-fDK"/>
+                            <constraint firstItem="OuP-UI-UzO" firstAttribute="centerX" secondItem="IhI-Lx-dFy" secondAttribute="centerX" id="PjC-pf-80f"/>
+                            <constraint firstItem="7pX-A9-tXt" firstAttribute="trailing" secondItem="iRB-dK-Kf0" secondAttribute="trailing" id="QiN-mk-GMj"/>
+                            <constraint firstItem="OuP-UI-UzO" firstAttribute="top" secondItem="dPi-yr-sJK" secondAttribute="bottom" constant="8" id="bDT-2i-uc8"/>
+                            <constraint firstItem="7pX-A9-tXt" firstAttribute="leading" secondItem="iRB-dK-Kf0" secondAttribute="leading" id="enK-ba-O2r"/>
+                            <constraint firstItem="iRB-dK-Kf0" firstAttribute="bottom" secondItem="83d-n9-x3u" secondAttribute="bottom" constant="30" id="iNU-FJ-seO"/>
+                            <constraint firstItem="83d-n9-x3u" firstAttribute="leading" secondItem="iRB-dK-Kf0" secondAttribute="leading" constant="50" id="qgr-g6-z3K"/>
+                            <constraint firstItem="dPi-yr-sJK" firstAttribute="centerX" secondItem="IhI-Lx-dFy" secondAttribute="centerX" id="vTF-PB-Azd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RNT-bX-xOh"/>
+                    <connections>
+                        <outlet property="letsGoBtn" destination="83d-n9-x3u" id="tGZ-jd-sCl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CDk-sE-3o4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="97.098214285714278"/>
+        </scene>
+        <!--Choose GenderVC-->
+        <scene sceneID="nge-3D-aDu">
+            <objects>
+                <viewController storyboardIdentifier="ChooseGenderVC" id="9c3-Gd-0On" customClass="ChooseGenderVC" customModule="WaterReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eac-3A-bDV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_chooseGender" translatesAutoresizingMaskIntoConstraints="NO" id="JaC-Lq-muG">
+                                <rect key="frame" x="132" y="104" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="6b8-aA-156"/>
+                                    <constraint firstAttribute="height" constant="150" id="7C1-2U-v6f"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your gender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WN5-w7-6hn">
+                                <rect key="frame" x="91" y="274" width="232" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="3G5-zF-Pyf"/>
+                                    <constraint firstAttribute="width" constant="232" id="DHr-VV-b91"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpD-z6-6Hy">
+                                <rect key="frame" x="60" y="368" width="120" height="188"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCY-6c-Djh">
+                                        <rect key="frame" x="10" y="153" width="100" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="BYm-0E-zoW"/>
+                                            <constraint firstAttribute="height" constant="24" id="yt6-YT-CRy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" red="0.1058823529" green="0.68235294120000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRD-Gp-O99">
+                                        <rect key="frame" x="10" y="16" width="100" height="125"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="KIt-Wk-4Rf"/>
+                                            <constraint firstAttribute="width" constant="100" id="WwD-tD-iuK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_bluewaterDrop"/>
+                                        <connections>
+                                            <action selector="maleSelectionBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="1hG-LG-Ajp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="eRD-Gp-O99" firstAttribute="centerX" secondItem="hpD-z6-6Hy" secondAttribute="centerX" id="3bE-PF-Vjr"/>
+                                    <constraint firstItem="TCY-6c-Djh" firstAttribute="top" secondItem="eRD-Gp-O99" secondAttribute="bottom" constant="12" id="B9d-YB-bNO"/>
+                                    <constraint firstAttribute="width" constant="120" id="hy5-SR-ruw"/>
+                                    <constraint firstItem="TCY-6c-Djh" firstAttribute="centerX" secondItem="hpD-z6-6Hy" secondAttribute="centerX" id="o0K-k4-0dl"/>
+                                    <constraint firstAttribute="height" constant="188" id="pLp-X3-07F"/>
+                                    <constraint firstItem="eRD-Gp-O99" firstAttribute="top" secondItem="hpD-z6-6Hy" secondAttribute="top" constant="16" id="sbP-TL-tXg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1B-2o-Twd">
+                                <rect key="frame" x="234" y="368" width="120" height="188"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arl-Yl-CUz">
+                                        <rect key="frame" x="10" y="16" width="100" height="125"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="T1o-BX-oAf"/>
+                                            <constraint firstAttribute="width" constant="100" id="auK-HI-UtX"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_pink"/>
+                                        <connections>
+                                            <action selector="femaleSelectionBtnTappe:" destination="9c3-Gd-0On" eventType="touchUpInside" id="E2G-eL-fHe"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIe-M4-dqG">
+                                        <rect key="frame" x="10" y="153" width="100" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="KF5-fG-97C"/>
+                                            <constraint firstAttribute="height" constant="24" id="hBN-pK-h9S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" red="1" green="0.27058823529999998" blue="0.57647058819999997" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Arl-Yl-CUz" firstAttribute="top" secondItem="Y1B-2o-Twd" secondAttribute="top" constant="16" id="0b3-PQ-XfZ"/>
+                                    <constraint firstItem="dIe-M4-dqG" firstAttribute="centerX" secondItem="Y1B-2o-Twd" secondAttribute="centerX" id="2Zq-jH-HzW"/>
+                                    <constraint firstItem="Arl-Yl-CUz" firstAttribute="centerX" secondItem="Y1B-2o-Twd" secondAttribute="centerX" id="5d6-XH-vfh"/>
+                                    <constraint firstItem="dIe-M4-dqG" firstAttribute="top" secondItem="Arl-Yl-CUz" secondAttribute="bottom" constant="12" id="SHy-nD-5FX"/>
+                                    <constraint firstAttribute="width" constant="120" id="jM5-Kv-YYi"/>
+                                    <constraint firstAttribute="height" constant="188" id="oOg-Cr-s3V"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcA-ic-SHn" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0Na-11-MPE"/>
+                                    <constraint firstAttribute="height" constant="50" id="Gg8-Xw-hzk"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_backarrow" cornerStyle="capsule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="4Hw-Fe-lIl"/>
+                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="Q8v-Uw-mNE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOs-A0-c0W" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="294" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="NFL-q9-Y9T"/>
+                                    <constraint firstAttribute="height" constant="50" id="Noe-GG-rq7"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="NEXT" cornerStyle="capsule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="8OF-pu-3Mc"/>
+                                    <action selector="nextBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="rje-pw-VBN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ejb-vB-NRi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hpD-z6-6Hy" firstAttribute="leading" secondItem="ejb-vB-NRi" secondAttribute="leading" constant="60" id="405-50-w9w"/>
+                            <constraint firstItem="JaC-Lq-muG" firstAttribute="centerX" secondItem="eac-3A-bDV" secondAttribute="centerX" id="AGI-1s-uRd"/>
+                            <constraint firstItem="Y1B-2o-Twd" firstAttribute="top" secondItem="WN5-w7-6hn" secondAttribute="bottom" constant="70" id="Crt-Oo-HJ3"/>
+                            <constraint firstItem="WN5-w7-6hn" firstAttribute="centerX" secondItem="eac-3A-bDV" secondAttribute="centerX" id="KD1-u9-4V6"/>
+                            <constraint firstItem="JaC-Lq-muG" firstAttribute="top" secondItem="ejb-vB-NRi" secondAttribute="top" constant="60" id="KKj-75-QEK"/>
+                            <constraint firstItem="WN5-w7-6hn" firstAttribute="top" secondItem="JaC-Lq-muG" secondAttribute="bottom" constant="20" id="XMF-6x-2SK"/>
+                            <constraint firstItem="ejb-vB-NRi" firstAttribute="trailing" secondItem="Y1B-2o-Twd" secondAttribute="trailing" constant="60" id="Y4Q-6E-DCc"/>
+                            <constraint firstItem="ejb-vB-NRi" firstAttribute="trailing" secondItem="OOs-A0-c0W" secondAttribute="trailing" constant="20" id="fDJ-jY-ouq"/>
+                            <constraint firstItem="AcA-ic-SHn" firstAttribute="leading" secondItem="ejb-vB-NRi" secondAttribute="leading" constant="20" id="pl6-Om-kPF"/>
+                            <constraint firstItem="hpD-z6-6Hy" firstAttribute="top" secondItem="WN5-w7-6hn" secondAttribute="bottom" constant="70" id="tf6-xY-K1H"/>
+                            <constraint firstItem="ejb-vB-NRi" firstAttribute="bottom" secondItem="OOs-A0-c0W" secondAttribute="bottom" constant="30" id="tjm-lV-Gto"/>
+                            <constraint firstItem="ejb-vB-NRi" firstAttribute="bottom" secondItem="AcA-ic-SHn" secondAttribute="bottom" constant="30" id="uJ1-Zk-UQw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="AcA-ic-SHn" id="g4V-UW-Edy"/>
+                        <outlet property="chooseGenderLbl" destination="WN5-w7-6hn" id="V2o-jq-ceD"/>
+                        <outlet property="femaleLbl" destination="dIe-M4-dqG" id="EGp-0C-7sY"/>
+                        <outlet property="femaleSelectionBtn" destination="Arl-Yl-CUz" id="OnK-LJ-hqC"/>
+                        <outlet property="femaleView" destination="Y1B-2o-Twd" id="8bs-2h-nzX"/>
+                        <outlet property="maleLbl" destination="TCY-6c-Djh" id="i2B-SJ-2KV"/>
+                        <outlet property="maleSelectionBtn" destination="eRD-Gp-O99" id="WD0-eI-dQ1"/>
+                        <outlet property="maleView" destination="hpD-z6-6Hy" id="R9G-eK-x30"/>
+                        <outlet property="nextBtn" destination="OOs-A0-c0W" id="v7P-sy-qE9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8U1-Un-EFx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1697.1014492753625" y="96.428571428571431"/>
+        </scene>
+        <!--WeightVC-->
+        <scene sceneID="uCI-hZ-cbi">
+            <objects>
+                <viewController storyboardIdentifier="WeightVC" id="KTq-V1-IGY" customClass="WeightVC" customModule="WaterReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L4I-F0-FGA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_weightBlue" translatesAutoresizingMaskIntoConstraints="NO" id="uX9-yd-qaF">
+                                <rect key="frame" x="132" y="104" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="FnG-CI-Ds4"/>
+                                    <constraint firstAttribute="height" constant="150" id="ueE-WN-wpm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much do you weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDe-mq-4xQ">
+                                <rect key="frame" x="91" y="274" width="232" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="uj0-rm-Yyo"/>
+                                    <constraint firstAttribute="height" constant="24" id="zOJ-oi-tpC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                <color key="textColor" red="0.1058823529" green="0.68235294120000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bluewaterDrop" translatesAutoresizingMaskIntoConstraints="NO" id="6O5-Ei-aga">
+                                <rect key="frame" x="50" y="378" width="100" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EAj-eX-6l7"/>
+                                    <constraint firstAttribute="height" constant="125" id="shs-xP-JVg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="na3-ek-mg8" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7ZV-nu-foO"/>
+                                    <constraint firstAttribute="height" constant="50" id="dlb-MM-aQt"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_backarrow" cornerStyle="capsule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="O86-2F-XFo"/>
+                                    <action selector="backBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="atq-Gn-gBu"/>
+                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="taI-sh-Twa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCi-eR-Ef8" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="294" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Rap-c9-zZe"/>
+                                    <constraint firstAttribute="width" constant="100" id="ua8-zs-SgI"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="NEXT" cornerStyle="capsule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="XXx-eE-xR8"/>
+                                    <action selector="nextBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="mHe-Tu-qAI"/>
+                                    <action selector="nextBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="oOs-R2-XMY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G2i-ID-gbn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6O5-Ei-aga" firstAttribute="leading" secondItem="G2i-ID-gbn" secondAttribute="leading" constant="50" id="IIq-Qg-JyN"/>
+                            <constraint firstItem="uX9-yd-qaF" firstAttribute="centerX" secondItem="L4I-F0-FGA" secondAttribute="centerX" id="Nkq-IE-9SH"/>
+                            <constraint firstItem="G2i-ID-gbn" firstAttribute="bottom" secondItem="KCi-eR-Ef8" secondAttribute="bottom" constant="30" id="QSC-HS-vTD"/>
+                            <constraint firstItem="6O5-Ei-aga" firstAttribute="top" secondItem="sDe-mq-4xQ" secondAttribute="bottom" constant="80" id="X10-49-ahd"/>
+                            <constraint firstItem="uX9-yd-qaF" firstAttribute="top" secondItem="G2i-ID-gbn" secondAttribute="top" constant="60" id="j5T-MT-V5T"/>
+                            <constraint firstItem="G2i-ID-gbn" firstAttribute="bottom" secondItem="na3-ek-mg8" secondAttribute="bottom" constant="30" id="j6x-dx-18g"/>
+                            <constraint firstItem="sDe-mq-4xQ" firstAttribute="centerX" secondItem="L4I-F0-FGA" secondAttribute="centerX" id="mnc-Uo-7Y4"/>
+                            <constraint firstItem="sDe-mq-4xQ" firstAttribute="top" secondItem="uX9-yd-qaF" secondAttribute="bottom" constant="20" id="mvI-oA-StJ"/>
+                            <constraint firstItem="G2i-ID-gbn" firstAttribute="trailing" secondItem="KCi-eR-Ef8" secondAttribute="trailing" constant="20" id="oG2-5x-v3b"/>
+                            <constraint firstItem="na3-ek-mg8" firstAttribute="leading" secondItem="G2i-ID-gbn" secondAttribute="leading" constant="20" id="vOF-yE-ZbR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="na3-ek-mg8" id="tIr-cm-c2R"/>
+                        <outlet property="nextBtn" destination="KCi-eR-Ef8" id="3sX-id-Ex3"/>
+                        <outlet property="titleLbl" destination="sDe-mq-4xQ" id="BNA-UH-Gzx"/>
+                        <outlet property="waterDropImageView" destination="6O5-Ei-aga" id="O5R-5q-5vb"/>
+                        <outlet property="weightImageView" destination="uX9-yd-qaF" id="wJG-mP-PtO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdo-NY-FrZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2337.68115942029" y="95.758928571428569"/>
+        </scene>
+        <!--Wake UpVC-->
+        <scene sceneID="yO3-nr-KLY">
+            <objects>
+                <viewController storyboardIdentifier="WakeUpVC" id="ipp-B2-gNX" customClass="WakeUpVC" customModule="WaterReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cFd-8A-afL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_wakeupBlueClock" translatesAutoresizingMaskIntoConstraints="NO" id="r5R-pg-OpX">
+                                <rect key="frame" x="132" y="104" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Y61-kf-Ef6"/>
+                                    <constraint firstAttribute="width" constant="150" id="cqX-y5-Doo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What time do you wake up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ww-dt-64R">
+                                <rect key="frame" x="79" y="274" width="256" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="1AK-1L-IRy"/>
+                                    <constraint firstAttribute="width" constant="256" id="MdY-w7-81Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                <color key="textColor" red="0.1058823529" green="0.68235294120000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bluewaterDrop" translatesAutoresizingMaskIntoConstraints="NO" id="pLs-cs-B0z">
+                                <rect key="frame" x="50" y="378" width="100" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="HxS-bg-R98"/>
+                                    <constraint firstAttribute="width" constant="100" id="xzy-sS-S9p"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDd-Ec-hYZ" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HBs-UO-5UT"/>
+                                    <constraint firstAttribute="height" constant="50" id="aQs-xJ-YWH"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_backarrow" cornerStyle="capsule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="Fu5-Rq-UWs"/>
+                                    <action selector="backBtnTapped:" destination="ipp-B2-gNX" eventType="touchUpInside" id="v4Z-Ve-nDd"/>
+                                    <action selector="backBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="zmZ-pE-D2P"/>
+                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="1oF-1q-Dbv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDB-kA-MFV" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="294" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Li0-Ca-qQI"/>
+                                    <constraint firstAttribute="height" constant="50" id="rKu-Ya-4EX"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="NEXT" cornerStyle="capsule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="KWV-vx-yDK"/>
+                                    <action selector="nextBtnTapped:" destination="ipp-B2-gNX" eventType="touchUpInside" id="8zU-r0-YC9"/>
+                                    <action selector="nextBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="JDB-Wp-zYL"/>
+                                    <action selector="nextBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="NwY-lB-Qwf"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="XFc-ey-SzT">
+                                <rect key="frame" x="220" y="365" width="150" height="150"/>
+                                <color key="tintColor" red="1" green="0.27058823529999998" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="D6v-oj-qFs"/>
+                                    <constraint firstAttribute="width" constant="150" id="IFG-PU-n8W"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="timePickerValueChanged:" destination="ipp-B2-gNX" eventType="valueChanged" id="6Hr-Af-dks"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aap-VS-sIG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r5R-pg-OpX" firstAttribute="centerX" secondItem="cFd-8A-afL" secondAttribute="centerX" id="0Z6-l2-u3Z"/>
+                            <constraint firstItem="4Ww-dt-64R" firstAttribute="centerX" secondItem="cFd-8A-afL" secondAttribute="centerX" id="12z-UY-5QX"/>
+                            <constraint firstItem="XFc-ey-SzT" firstAttribute="top" secondItem="4Ww-dt-64R" secondAttribute="bottom" constant="67" id="Azc-9U-ahU"/>
+                            <constraint firstItem="QDd-Ec-hYZ" firstAttribute="leading" secondItem="aap-VS-sIG" secondAttribute="leading" constant="20" id="H6F-hd-ZWI"/>
+                            <constraint firstItem="r5R-pg-OpX" firstAttribute="top" secondItem="aap-VS-sIG" secondAttribute="top" constant="60" id="Ukq-fb-bVq"/>
+                            <constraint firstItem="aap-VS-sIG" firstAttribute="trailing" secondItem="XFc-ey-SzT" secondAttribute="trailing" constant="44" id="YSI-Yt-z6g"/>
+                            <constraint firstItem="4Ww-dt-64R" firstAttribute="top" secondItem="r5R-pg-OpX" secondAttribute="bottom" constant="20" id="axg-t3-lI4"/>
+                            <constraint firstItem="aap-VS-sIG" firstAttribute="bottom" secondItem="QDd-Ec-hYZ" secondAttribute="bottom" constant="30" id="dhJ-bf-Deb"/>
+                            <constraint firstItem="aap-VS-sIG" firstAttribute="trailing" secondItem="pDB-kA-MFV" secondAttribute="trailing" constant="20" id="mW6-kk-XfQ"/>
+                            <constraint firstItem="pLs-cs-B0z" firstAttribute="leading" secondItem="aap-VS-sIG" secondAttribute="leading" constant="50" id="qVc-2T-AXW"/>
+                            <constraint firstItem="pLs-cs-B0z" firstAttribute="top" secondItem="4Ww-dt-64R" secondAttribute="bottom" constant="80" id="qxC-jN-Tbk"/>
+                            <constraint firstItem="aap-VS-sIG" firstAttribute="bottom" secondItem="pDB-kA-MFV" secondAttribute="bottom" constant="30" id="skP-w1-WsY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="QDd-Ec-hYZ" id="rmv-Hd-8AY"/>
+                        <outlet property="nextBtn" destination="pDB-kA-MFV" id="vCG-m4-2RZ"/>
+                        <outlet property="timePickerView" destination="XFc-ey-SzT" id="ehd-Lu-OBb"/>
+                        <outlet property="titleLbl" destination="4Ww-dt-64R" id="bAL-8U-aic"/>
+                        <outlet property="wakeupClockImageView" destination="r5R-pg-OpX" id="HaR-0j-lU3"/>
+                        <outlet property="waterDropImageView" destination="pLs-cs-B0z" id="fHW-b0-kYS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1N-j0-hxP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2973.913043478261" y="95.758928571428569"/>
+        </scene>
+        <!--BedVC-->
+        <scene sceneID="g5l-77-heE">
+            <objects>
+                <viewController storyboardIdentifier="BedVC" id="mdd-Cd-okt" customClass="BedVC" customModule="WaterReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gmk-d2-VDT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_blueBed" translatesAutoresizingMaskIntoConstraints="NO" id="Eky-Xa-nDm">
+                                <rect key="frame" x="132" y="104" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="hWb-yd-Lip"/>
+                                    <constraint firstAttribute="height" constant="150" id="rKI-MU-Yji"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_blueSleepWaterDrop" translatesAutoresizingMaskIntoConstraints="NO" id="SZY-Ir-i9O">
+                                <rect key="frame" x="50" y="378" width="100" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="WdQ-ci-CnG"/>
+                                    <constraint firstAttribute="width" constant="100" id="aTR-mO-GuB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When do you go to bed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyz-wg-N4b">
+                                <rect key="frame" x="79" y="274" width="256" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="BIv-vl-7qN"/>
+                                    <constraint firstAttribute="height" constant="24" id="CQW-DJ-uSF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                <color key="textColor" red="0.1058823529" green="0.68235294120000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6m-Ad-zsb" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6TI-bY-sKp"/>
+                                    <constraint firstAttribute="width" constant="100" id="hZ5-Th-9Jg"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_backarrow" cornerStyle="capsule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="OH9-hd-ZZE"/>
+                                    <action selector="backBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="ayu-v1-qi6"/>
+                                    <action selector="backBtnTapped:" destination="mdd-Cd-okt" eventType="touchUpInside" id="fTe-4f-yN8"/>
+                                    <action selector="backBtnTapped:" destination="ipp-B2-gNX" eventType="touchUpInside" id="qGn-7q-z9g"/>
+                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="WCh-0n-vb7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgj-sI-7nm" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="294" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Et-Uh-YRh"/>
+                                    <constraint firstAttribute="width" constant="100" id="Lig-nh-Ag6"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="NEXT" cornerStyle="capsule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="QES-kM-wg3"/>
+                                    <action selector="nextBtnTapped:" destination="mdd-Cd-okt" eventType="touchUpInside" id="0fW-1V-lUM"/>
+                                    <action selector="nextBtnTapped:" destination="ipp-B2-gNX" eventType="touchUpInside" id="6Ca-52-ReB"/>
+                                    <action selector="nextBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="c2H-a5-EJA"/>
+                                    <action selector="nextBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="nXd-nf-2Q2"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="dW6-Ed-TPt">
+                                <rect key="frame" x="220" y="365" width="150" height="150"/>
+                                <color key="tintColor" red="1" green="0.27058823529999998" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="0LK-f9-f7s"/>
+                                    <constraint firstAttribute="width" constant="150" id="0af-f1-oBy"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="timePickerValueChanged:" destination="mdd-Cd-okt" eventType="valueChanged" id="q48-Ii-koS"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GFn-cK-zvy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Eky-Xa-nDm" firstAttribute="centerX" secondItem="Gmk-d2-VDT" secondAttribute="centerX" id="2DZ-Om-5yh"/>
+                            <constraint firstItem="SZY-Ir-i9O" firstAttribute="top" secondItem="gyz-wg-N4b" secondAttribute="bottom" constant="80" id="H86-5Y-4Wm"/>
+                            <constraint firstItem="GFn-cK-zvy" firstAttribute="bottom" secondItem="Fgj-sI-7nm" secondAttribute="bottom" constant="30" id="IA0-pd-JQi"/>
+                            <constraint firstItem="SZY-Ir-i9O" firstAttribute="leading" secondItem="GFn-cK-zvy" secondAttribute="leading" constant="50" id="JQf-cA-Drq"/>
+                            <constraint firstItem="GFn-cK-zvy" firstAttribute="bottom" secondItem="f6m-Ad-zsb" secondAttribute="bottom" constant="30" id="RAr-US-8Ym"/>
+                            <constraint firstItem="dW6-Ed-TPt" firstAttribute="top" secondItem="gyz-wg-N4b" secondAttribute="bottom" constant="67" id="TqV-VZ-dRk"/>
+                            <constraint firstItem="GFn-cK-zvy" firstAttribute="trailing" secondItem="dW6-Ed-TPt" secondAttribute="trailing" constant="44" id="c2V-RS-puK"/>
+                            <constraint firstItem="f6m-Ad-zsb" firstAttribute="leading" secondItem="GFn-cK-zvy" secondAttribute="leading" constant="20" id="ddk-sh-yq0"/>
+                            <constraint firstItem="gyz-wg-N4b" firstAttribute="centerX" secondItem="Gmk-d2-VDT" secondAttribute="centerX" id="hFV-Km-sHM"/>
+                            <constraint firstItem="gyz-wg-N4b" firstAttribute="top" secondItem="Eky-Xa-nDm" secondAttribute="bottom" constant="20" id="sUK-3W-iFu"/>
+                            <constraint firstItem="GFn-cK-zvy" firstAttribute="trailing" secondItem="Fgj-sI-7nm" secondAttribute="trailing" constant="20" id="tL2-A3-OVw"/>
+                            <constraint firstItem="Eky-Xa-nDm" firstAttribute="top" secondItem="GFn-cK-zvy" secondAttribute="top" constant="60" id="veF-Wm-h1V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="f6m-Ad-zsb" id="QKS-7k-7ar"/>
+                        <outlet property="bedImageView" destination="Eky-Xa-nDm" id="dcd-nm-jvd"/>
+                        <outlet property="nextBtn" destination="Fgj-sI-7nm" id="28f-8x-X0E"/>
+                        <outlet property="timePickerView" destination="dW6-Ed-TPt" id="hrn-Y5-YUF"/>
+                        <outlet property="titleLbl" destination="gyz-wg-N4b" id="gVc-PC-Hxb"/>
+                        <outlet property="waterDropImageView" destination="SZY-Ir-i9O" id="fPU-le-GAN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEj-oS-U6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3639" y="96"/>
+        </scene>
+        <!--Water ReminderVC-->
+        <scene sceneID="dJh-W5-FOf">
+            <objects>
+                <viewController storyboardIdentifier="WaterReminderVC" id="4Ou-bO-UMr" customClass="WaterReminderVC" customModule="WaterReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g7y-4x-zjc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_waterReminderBlue" translatesAutoresizingMaskIntoConstraints="NO" id="FoX-cx-1Yk">
+                                <rect key="frame" x="132" y="104" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Piu-D9-7TH"/>
+                                    <constraint firstAttribute="height" constant="150" id="fIL-iI-Izf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When do you drink water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r53-cR-NmX">
+                                <rect key="frame" x="79" y="274" width="256" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="Rg8-0r-oCY"/>
+                                    <constraint firstAttribute="height" constant="24" id="YaZ-Ch-m4w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                <color key="textColor" red="0.1058823529" green="0.68235294120000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bluewaterDrop" translatesAutoresizingMaskIntoConstraints="NO" id="Jmb-2j-jrQ">
+                                <rect key="frame" x="50" y="378" width="100" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EuU-RZ-q0Y"/>
+                                    <constraint firstAttribute="height" constant="125" id="qLm-GR-Sxh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKL-eZ-6ZT" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7mo-HO-Js1"/>
+                                    <constraint firstAttribute="height" constant="50" id="Xf2-P6-jJ7"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_backarrow" cornerStyle="capsule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backBtnTapped:" destination="4Ou-bO-UMr" eventType="touchUpInside" id="7Zh-ic-ZkJ"/>
+                                    <action selector="backBtnTapped:" destination="ipp-B2-gNX" eventType="touchUpInside" id="Kbp-pc-fbi"/>
+                                    <action selector="backBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="aVe-E1-HhK"/>
+                                    <action selector="backBtnTapped:" destination="mdd-Cd-okt" eventType="touchUpInside" id="oe7-B7-W6E"/>
+                                    <action selector="backBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="w53-gZ-KYe"/>
+                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="PPd-Kl-tS1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTN-aB-n01" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="294" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oNJ-MZ-9OB"/>
+                                    <constraint firstAttribute="width" constant="100" id="omb-ck-PiH"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="NEXT" cornerStyle="capsule"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="quS-Zi-uuA"/>
+                                    <action selector="nextBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="1vg-C3-9PX"/>
+                                    <action selector="nextBtnTapped:" destination="4Ou-bO-UMr" eventType="touchUpInside" id="DEc-7H-d6j"/>
+                                    <action selector="nextBtnTapped:" destination="ipp-B2-gNX" eventType="touchUpInside" id="JXj-FU-O0Y"/>
+                                    <action selector="nextBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="qUp-wa-CdE"/>
+                                    <action selector="nextBtnTapped:" destination="mdd-Cd-okt" eventType="touchUpInside" id="rai-I5-fcp"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="nco-AB-Lck">
+                                <rect key="frame" x="220" y="365" width="150" height="150"/>
+                                <color key="tintColor" red="1" green="0.27058823529999998" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="MwO-lM-fKW"/>
+                                    <constraint firstAttribute="height" constant="150" id="UVz-DJ-u5f"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="timePickerValueChanged:" destination="4Ou-bO-UMr" eventType="valueChanged" id="z9z-uH-M5S"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cCT-OX-MMb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r53-cR-NmX" firstAttribute="top" secondItem="FoX-cx-1Yk" secondAttribute="bottom" constant="20" id="2tA-Yb-nHk"/>
+                            <constraint firstItem="Jmb-2j-jrQ" firstAttribute="leading" secondItem="cCT-OX-MMb" secondAttribute="leading" constant="50" id="4tT-7P-kGU"/>
+                            <constraint firstItem="CKL-eZ-6ZT" firstAttribute="leading" secondItem="cCT-OX-MMb" secondAttribute="leading" constant="20" id="5LX-mh-1GE"/>
+                            <constraint firstItem="FoX-cx-1Yk" firstAttribute="centerX" secondItem="g7y-4x-zjc" secondAttribute="centerX" id="8XR-fB-p5M"/>
+                            <constraint firstItem="Jmb-2j-jrQ" firstAttribute="top" secondItem="r53-cR-NmX" secondAttribute="bottom" constant="80" id="CXD-2Y-1ZY"/>
+                            <constraint firstItem="cCT-OX-MMb" firstAttribute="bottom" secondItem="KTN-aB-n01" secondAttribute="bottom" constant="30" id="Epj-ls-Fmo"/>
+                            <constraint firstItem="cCT-OX-MMb" firstAttribute="bottom" secondItem="CKL-eZ-6ZT" secondAttribute="bottom" constant="30" id="N1j-ZM-dUu"/>
+                            <constraint firstItem="nco-AB-Lck" firstAttribute="top" secondItem="r53-cR-NmX" secondAttribute="bottom" constant="67" id="jWf-lP-FMJ"/>
+                            <constraint firstItem="FoX-cx-1Yk" firstAttribute="top" secondItem="cCT-OX-MMb" secondAttribute="top" constant="60" id="pie-s1-ibC"/>
+                            <constraint firstItem="r53-cR-NmX" firstAttribute="centerX" secondItem="g7y-4x-zjc" secondAttribute="centerX" id="rXm-im-SsJ"/>
+                            <constraint firstItem="cCT-OX-MMb" firstAttribute="trailing" secondItem="nco-AB-Lck" secondAttribute="trailing" constant="44" id="rtX-v7-Yqm"/>
+                            <constraint firstItem="cCT-OX-MMb" firstAttribute="trailing" secondItem="KTN-aB-n01" secondAttribute="trailing" constant="20" id="yK5-Eh-RtC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="CKL-eZ-6ZT" id="dYf-f2-f6K"/>
+                        <outlet property="nextBtn" destination="KTN-aB-n01" id="PTk-nD-lIy"/>
+                        <outlet property="timePickerView" destination="nco-AB-Lck" id="nY2-0x-0mS"/>
+                        <outlet property="titleLbl" destination="r53-cR-NmX" id="70N-AP-GOy"/>
+                        <outlet property="waterDropImageView" destination="Jmb-2j-jrQ" id="XGR-L5-cpu"/>
+                        <outlet property="waterReminderImgView" destination="FoX-cx-1Yk" id="dZb-Rx-BWu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YP5-et-4u6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4324.6376811594209" y="95.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5if-vP-YJk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="aXv-BC-48e" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E5W-E1-Gs6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bnk-sX-uLG" kind="relationship" relationship="rootViewController" id="MYj-uN-b5b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJr-xv-lj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="97.098214285714278"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="83d-n9-x3u">
+            <size key="intrinsicContentSize" width="86.5" height="31"/>
+        </designable>
+        <designable name="AcA-ic-SHn">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="CKL-eZ-6ZT">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="Fgj-sI-7nm">
+            <size key="intrinsicContentSize" width="61" height="31"/>
+        </designable>
+        <designable name="KCi-eR-Ef8">
+            <size key="intrinsicContentSize" width="61" height="31"/>
+        </designable>
+        <designable name="KTN-aB-n01">
+            <size key="intrinsicContentSize" width="61" height="31"/>
+        </designable>
+        <designable name="OOs-A0-c0W">
+            <size key="intrinsicContentSize" width="61" height="31"/>
+        </designable>
+        <designable name="QDd-Ec-hYZ">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="f6m-Ad-zsb">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="na3-ek-mg8">
+            <size key="intrinsicContentSize" width="48" height="48"/>
+        </designable>
+        <designable name="pDB-kA-MFV">
+            <size key="intrinsicContentSize" width="61" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_backarrow" width="24" height="24"/>
+        <image name="ic_blueBed" width="150" height="150"/>
+        <image name="ic_blueSleepWaterDrop" width="80" height="125"/>
+        <image name="ic_bluewaterDrop" width="80" height="125"/>
+        <image name="ic_chooseGender" width="150" height="150"/>
+        <image name="ic_onboardingWaterdrops" width="360" height="306"/>
+        <image name="ic_pink" width="80" height="125"/>
+        <image name="ic_wakeupBlueClock" width="150" height="150"/>
+        <image name="ic_waterReminderBlue" width="150" height="150"/>
+        <image name="ic_weightBlue" width="150" height="150"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
