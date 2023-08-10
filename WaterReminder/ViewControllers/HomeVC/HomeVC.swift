@@ -43,8 +43,8 @@ class HomeVC: UIViewController {
         wave = WaveAnimationView(frame: CGRect(origin: .zero, size: bottleView.bounds.size), color: UIColor.blue.withAlphaComponent(0.5))
         bottleView.addSubview(wave)
         
-        wave.frontColor = UIColor(red: 112/255, green: 189/255, blue: 242/255, alpha: 1).withAlphaComponent(0.5)
-        wave.backColor = UIColor(red: 112/255, green: 189/255, blue: 242/255, alpha: 1).withAlphaComponent(0.5)
+        wave.frontColor = Constants.Colors.WaveColors.front
+        wave.backColor = Constants.Colors.WaveColors.back
         bottleView.layer.borderColor = UIColor.black.cgColor
         
         wave.mask = bottleView.mask

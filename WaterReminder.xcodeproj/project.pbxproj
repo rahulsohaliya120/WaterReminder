@@ -10,6 +10,7 @@
 		0BDD49ECF70633D9AB08F7AE /* Pods_WaterReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8307BBDEB1FD0455F3CAB1AF /* Pods_WaterReminder.framework */; };
 		B7156C722A72F5A3000A7173 /* WeightPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7156C712A72F5A3000A7173 /* WeightPickerVC.swift */; };
 		B7156C7D2A731045000A7173 /* DatabaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7156C7C2A731045000A7173 /* DatabaseClass.swift */; };
+		BD06D9172A850487002366E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06D9162A850487002366E9 /* Constants.swift */; };
 		BD0D9AFD2A77D51C008FE0AF /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D9AFC2A77D51C008FE0AF /* HistoryVC.swift */; };
 		BD0D9AFF2A77D52F008FE0AF /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0D9AFE2A77D52F008FE0AF /* SettingVC.swift */; };
 		BD1D56E12A7CAFA8000CF6F4 /* DataRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D56DF2A7CAFA8000CF6F4 /* DataRecordTableViewCell.swift */; };
@@ -42,6 +43,7 @@
 		8307BBDEB1FD0455F3CAB1AF /* Pods_WaterReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7156C712A72F5A3000A7173 /* WeightPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightPickerVC.swift; sourceTree = "<group>"; };
 		B7156C7C2A731045000A7173 /* DatabaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseClass.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		BD06D9162A850487002366E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BD0D9AFC2A77D51C008FE0AF /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		BD0D9AFE2A77D52F008FE0AF /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		BD1D56DF2A7CAFA8000CF6F4 /* DataRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRecordTableViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +93,56 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BD06D9112A84FC9A002366E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD40831F2A724CB90035007D /* Fonts */,
+				BD40830F2A7244CE0035007D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BD06D9132A84FCD8002366E9 /* Fredoka-Medium */ = {
+			isa = PBXGroup;
+			children = (
+				BD4083222A724CCF0035007D /* Fredoka-Medium.ttf */,
+			);
+			path = "Fredoka-Medium";
+			sourceTree = "<group>";
+		};
+		BD06D9142A84FCF5002366E9 /* Poppins-Regular */ = {
+			isa = PBXGroup;
+			children = (
+				BD4083522A724D880035007D /* Poppins-Regular.ttf */,
+			);
+			path = "Poppins-Regular";
+			sourceTree = "<group>";
+		};
+		BD06D9152A84FD04002366E9 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				BD4083542A724DEE0035007D /* Roboto-Bold.ttf */,
+				BD4083552A724DEE0035007D /* Roboto-Medium.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		BD06D9182A850500002366E9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BD06D9162A850487002366E9 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BD06D9192A850D99002366E9 /* HeaderTableView */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D56EB2A7CDF3D000CF6F4 /* HeaderTableView.swift */,
+			);
+			path = HeaderTableView;
+			sourceTree = "<group>";
+		};
 		BD4082FA2A7244CA0035007D = {
 			isa = PBXGroup;
 			children = (
@@ -113,12 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				BD4083062A7244CA0035007D /* AppDelegate.swift */,
-				BD40831F2A724CB90035007D /* Fonts */,
 				BD40831E2A72490A0035007D /* ViewControllers */,
-				BD4083582A7264710035007D /* UtilityFunctions */,
 				BD4659652A8212BC00C898BB /* Views */,
-				BD40830F2A7244CE0035007D /* Assets.xcassets */,
-				BD4083112A7244CE0035007D /* LaunchScreen.storyboard */,
+				BD06D9112A84FC9A002366E9 /* Resources */,
 				BD4083142A7244CE0035007D /* Info.plist */,
 			);
 			path = WaterReminder;
@@ -141,6 +190,8 @@
 				BD6433A52A7BD74000B19D60 /* SettingVC */,
 				BD6433A62A7BD76200B19D60 /* DatabaseClassVC */,
 				BD6433A72A7BD77600B19D60 /* UserDetailsVC */,
+				BD4083582A7264710035007D /* UtilityFunctions */,
+				BD06D9182A850500002366E9 /* Constants */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -148,10 +199,9 @@
 		BD40831F2A724CB90035007D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				BD4083222A724CCF0035007D /* Fredoka-Medium.ttf */,
-				BD4083522A724D880035007D /* Poppins-Regular.ttf */,
-				BD4083542A724DEE0035007D /* Roboto-Bold.ttf */,
-				BD4083552A724DEE0035007D /* Roboto-Medium.ttf */,
+				BD06D9132A84FCD8002366E9 /* Fredoka-Medium */,
+				BD06D9142A84FCF5002366E9 /* Poppins-Regular */,
+				BD06D9152A84FD04002366E9 /* Roboto */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -167,6 +217,7 @@
 		BD4659652A8212BC00C898BB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BD4083112A7244CE0035007D /* LaunchScreen.storyboard */,
 				BD4659612A8211E300C898BB /* OnBoarding.storyboard */,
 				BD4659632A82123200C898BB /* Home.storyboard */,
 			);
@@ -272,8 +323,8 @@
 		BD6433A82A7BD78300B19D60 /* DataRecordTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				BD06D9192A850D99002366E9 /* HeaderTableView */,
 				BD1D56DF2A7CAFA8000CF6F4 /* DataRecordTableViewCell.swift */,
-				BD1D56EB2A7CDF3D000CF6F4 /* HeaderTableView.swift */,
 				BD1D56E02A7CAFA8000CF6F4 /* DataRecordTableViewCell.xib */,
 			);
 			path = DataRecordTableViewCell;
@@ -433,6 +484,7 @@
 				B7156C722A72F5A3000A7173 /* WeightPickerVC.swift in Sources */,
 				B7156C7D2A731045000A7173 /* DatabaseClass.swift in Sources */,
 				BD40831B2A72484F0035007D /* OnBoardingVC.swift in Sources */,
+				BD06D9172A850487002366E9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

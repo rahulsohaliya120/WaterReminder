@@ -35,15 +35,15 @@ class WakeUpVC: UIViewController {
     private func maleFemaleSelection() {
         if genderEnum == .male {
             wakeupClockImageView.image = UIImage(named: "ic_wakeupBlueClock")
-            titleLbl.textColor = UIColor(red: 27/255, green: 174/255, blue: 238/255, alpha: 1)
+            titleLbl.textColor = Constants.Colors.MaleColors.customBlue
             waterDropImageView.image = UIImage(named: "ic_bluewaterDrop")
-            timePickerView.setValue(UIColor(red: 27/255, green: 174/255, blue: 238/255, alpha: 1), forKey: "textColor")
+            timePickerView.setValue(Constants.Colors.MaleColors.customBlue, forKey: "textColor")
             timePickerView.translatesAutoresizingMaskIntoConstraints = false
         } else {
             wakeupClockImageView.image = UIImage(named: "ic_wakeupPinkClock")
-            titleLbl.textColor = UIColor(red: 255/255, green: 69/255, blue: 147/255, alpha: 1)
+            titleLbl.textColor = Constants.Colors.FemaleColors.customPink
             waterDropImageView.image = UIImage(named: "ic_weightWaterdrop")
-            timePickerView.setValue(UIColor(red: 255/255, green: 69/255, blue: 147/255, alpha: 1), forKey: "textColor")
+            timePickerView.setValue(Constants.Colors.FemaleColors.customPink, forKey: "textColor")
             timePickerView.translatesAutoresizingMaskIntoConstraints = false
         }
     }

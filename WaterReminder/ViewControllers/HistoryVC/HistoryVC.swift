@@ -110,7 +110,7 @@ class HistoryVC: UIViewController {
         }
         
         let dataSet = BarChartDataSet(entries: dataEntries, label: "ML Measurements")
-        dataSet.colors = [UIColor(red: 27/255, green: 174/255, blue: 238/255, alpha: 1)]
+        dataSet.colors = Constants.Colors.ChartViewBarColor.chartBarColor
         dataSet.drawValuesEnabled = false
         
         let data = BarChartData(dataSet: dataSet)
@@ -166,9 +166,9 @@ class HistoryVC: UIViewController {
     private func configureSegment() {
         segmentController.segments = LabelSegment.segments(withTitles: ["D", "W", "M", "Y"],
                                                            normalFont: .systemFont(ofSize: 14.0),
-                                                           normalTextColor: UIColor(red: 113/255, green: 212/255, blue: 255/255, alpha: 0.9),
+                                                           normalTextColor: Constants.Colors.SegmentColors.normalTextColor,
                                                            selectedFont: .systemFont(ofSize: 14.0),
-                                                           selectedTextColor: UIColor(red: 113/255, green: 212/255, blue: 255/255, alpha: 1))
+                                                           selectedTextColor: Constants.Colors.SegmentColors.selectedTextColor)
         segmentController.addTarget(self, action: #selector(segmentControllerValueChanged(_:)), for: .valueChanged)
     }
     

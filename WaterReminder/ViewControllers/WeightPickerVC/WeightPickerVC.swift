@@ -20,7 +20,7 @@ enum WeightUnit: String, CaseIterable {
 class WeightPickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
     weak var weightPickerDelegate: WeightPickerViewDelegate?
     
-    var currentThemeColor = UIColor(red: 27/255, green: 174/255, blue: 238/255, alpha: 1)
+    var currentThemeColor = Constants.Colors.MaleColors.customBlue
     
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class WeightVC: UIViewController, WeightPickerViewDelegate {
+class WeightVC: UIViewController {
     
     // MARK: - IBOutlets
     
@@ -40,11 +40,35 @@ class WeightVC: UIViewController, WeightPickerViewDelegate {
         weightSelected = true
         print("Selected weight: \(weight) \(unit.rawValue)")
     }
+
+    // MARK: - Actions
     
+    @IBAction func backBtnTapped(_ sender: GradientButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func nextBtnTapped(_ sender: GradientButton) {
+        userDetails = UserDetails(gender: userDetails?.gender ?? 0, weight: selectWeight, unit: selectedUnit, wakeUpSelectedTime: Date(), sleepSelectedTime: Date(), waterReminderTime: Date())
+        if weightSelected {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "OnBoarding", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "WakeUpVC") as! WakeUpVC
+            vc.genderEnum = genderEnum
+            vc.userDetails = userDetails
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            let alert = UIAlertController(title: "Weight Not Selected", message: "Please select your weight before proceeding.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
+    }
+}
+
+extension WeightVC: WeightPickerViewDelegate {
+
     private func maleFemaleSelection() {
         if genderEnum == .male {
             weightImageView.image = UIImage(named: "ic_weightBlue")
-            titleLbl.textColor = UIColor(red: 27/255, green: 174/255, blue: 238/255, alpha: 1)
+            titleLbl.textColor = Constants.Colors.MaleColors.customBlue
             waterDropImageView.image = UIImage(named: "ic_bluewaterDrop")
             
             weightPicker = WeightPickerView()
@@ -66,11 +90,11 @@ class WeightVC: UIViewController, WeightPickerViewDelegate {
             ])
             
             weightPicker.weightPickerDelegate = self
-            weightPicker.currentThemeColor = UIColor(red: 27/255, green: 174/255, blue: 238/255, alpha: 1)
+            weightPicker.currentThemeColor = Constants.Colors.MaleColors.customBlue
             
         } else {
             weightImageView.image = UIImage(named: "ic_weightPink")
-            titleLbl.textColor = UIColor(red: 255/255, green: 69/255, blue: 147/255, alpha: 1)
+            titleLbl.textColor = Constants.Colors.FemaleColors.customPink
             waterDropImageView.image = UIImage(named: "ic_weightWaterdrop")
             
             weightPicker = WeightPickerView()
@@ -92,29 +116,7 @@ class WeightVC: UIViewController, WeightPickerViewDelegate {
             ])
             
             weightPicker.weightPickerDelegate = self
-            weightPicker.currentThemeColor = UIColor(red: 255/255, green: 69/255, blue: 147/255, alpha: 1)
-        }
-    }
-    
-    
-    // MARK: - Actions
-    
-    @IBAction func backBtnTapped(_ sender: GradientButton) {
-        navigationController?.popViewController(animated: true)
-    }
-    
-    @IBAction func nextBtnTapped(_ sender: GradientButton) {
-        userDetails = UserDetails(gender: userDetails?.gender ?? 0, weight: selectWeight, unit: selectedUnit, wakeUpSelectedTime: Date(), sleepSelectedTime: Date(), waterReminderTime: Date())
-        if weightSelected {
-            let storyBoard: UIStoryboard = UIStoryboard(name: "OnBoarding", bundle: nil)
-            let vc = storyBoard.instantiateViewController(withIdentifier: "WakeUpVC") as! WakeUpVC
-            vc.genderEnum = genderEnum
-            vc.userDetails = userDetails
-            navigationController?.pushViewController(vc, animated: true)
-        } else {
-            let alert = UIAlertController(title: "Weight Not Selected", message: "Please select your weight before proceeding.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
+            weightPicker.currentThemeColor = Constants.Colors.FemaleColors.customPink
         }
     }
 }

@@ -60,7 +60,7 @@ class ChooseGenderVC: UIViewController {
     func getGradientLayer(bounds : CGRect) -> CAGradientLayer{
         let gradient = CAGradientLayer()
         gradient.frame = bounds
-        gradient.colors = [UIColor(red: 27/255, green: 174/255, blue: 238/255, alpha: 1).cgColor, UIColor(red: 255/255, green: 69/255, blue: 147/255, alpha: 1).cgColor]
+        gradient.colors = Constants.Colors.chooseGenderColor.colorful
         
         gradient.startPoint = CGPoint(x: 0.0, y: 0.5)
         gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
