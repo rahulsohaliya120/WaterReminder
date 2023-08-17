@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum Gender {
+    case male
+    case female
+}
+
 struct Constants {
     
     struct Colors {

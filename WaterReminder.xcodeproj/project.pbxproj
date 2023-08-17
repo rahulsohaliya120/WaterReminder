@@ -29,6 +29,30 @@
 		BD4659622A8211E300C898BB /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4659612A8211E300C898BB /* OnBoarding.storyboard */; };
 		BD4659642A82123200C898BB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4659632A82123200C898BB /* Home.storyboard */; };
 		BD486DAE2A7799B7000AE648 /* BottleMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD486DAD2A7799B7000AE648 /* BottleMask.swift */; };
+		BD55D7832A8DD92A00B20B69 /* OnBoardingContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D77E2A8DD92A00B20B69 /* OnBoardingContract.swift */; };
+		BD55D7842A8DD92A00B20B69 /* OnBoardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D77F2A8DD92A00B20B69 /* OnBoardingPresenter.swift */; };
+		BD55D7852A8DD92A00B20B69 /* OnBoardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7802A8DD92A00B20B69 /* OnBoardingRouter.swift */; };
+		BD55D7872A8DD92A00B20B69 /* OnBoardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7822A8DD92A00B20B69 /* OnBoardingInteractor.swift */; };
+		BD55D7932A8DE3BA00B20B69 /* ChooseGenderContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D78E2A8DE3BA00B20B69 /* ChooseGenderContract.swift */; };
+		BD55D7942A8DE3BA00B20B69 /* ChooseGenderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D78F2A8DE3BA00B20B69 /* ChooseGenderPresenter.swift */; };
+		BD55D7952A8DE3BA00B20B69 /* ChooseGenderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7902A8DE3BA00B20B69 /* ChooseGenderRouter.swift */; };
+		BD55D7972A8DE3BA00B20B69 /* ChooseGenderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7922A8DE3BA00B20B69 /* ChooseGenderInteractor.swift */; };
+		BD55D7A22A8DFAE800B20B69 /* WeightContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D79D2A8DFAE800B20B69 /* WeightContract.swift */; };
+		BD55D7A32A8DFAE800B20B69 /* WeightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D79E2A8DFAE800B20B69 /* WeightPresenter.swift */; };
+		BD55D7A42A8DFAE800B20B69 /* WeightRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D79F2A8DFAE800B20B69 /* WeightRouter.swift */; };
+		BD55D7A62A8DFAE800B20B69 /* WeightInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7A12A8DFAE800B20B69 /* WeightInteractor.swift */; };
+		BD55D7BB2A8E26E800B20B69 /* WakeUpContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7B62A8E26E700B20B69 /* WakeUpContract.swift */; };
+		BD55D7BC2A8E26E800B20B69 /* WakeUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7B72A8E26E800B20B69 /* WakeUpPresenter.swift */; };
+		BD55D7BD2A8E26E800B20B69 /* WakeUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7B82A8E26E800B20B69 /* WakeUpRouter.swift */; };
+		BD55D7BF2A8E26E800B20B69 /* WakeUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7BA2A8E26E800B20B69 /* WakeUpInteractor.swift */; };
+		BD55D7CA2A8E36C600B20B69 /* BedContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7C52A8E36C600B20B69 /* BedContract.swift */; };
+		BD55D7CB2A8E36C600B20B69 /* BedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7C62A8E36C600B20B69 /* BedPresenter.swift */; };
+		BD55D7CC2A8E36C600B20B69 /* BedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7C72A8E36C600B20B69 /* BedRouter.swift */; };
+		BD55D7CE2A8E36C600B20B69 /* BedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7C92A8E36C600B20B69 /* BedInteractor.swift */; };
+		BD55D7D92A8E3E7B00B20B69 /* WaterReminderContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7D42A8E3E7B00B20B69 /* WaterReminderContract.swift */; };
+		BD55D7DA2A8E3E7B00B20B69 /* WaterReminderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7D52A8E3E7B00B20B69 /* WaterReminderPresenter.swift */; };
+		BD55D7DB2A8E3E7B00B20B69 /* WaterReminderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7D62A8E3E7B00B20B69 /* WaterReminderRouter.swift */; };
+		BD55D7DD2A8E3E7B00B20B69 /* WaterReminderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7D82A8E3E7B00B20B69 /* WaterReminderInteractor.swift */; };
 		BD6845422A7A1CBD00394F6F /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6845412A7A1CBC00394F6F /* UserDetails.swift */; };
 		BD9E12F92A7281E900637AEA /* WeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E12F82A7281E900637AEA /* WeightVC.swift */; };
 		BD9E12FB2A728CA500637AEA /* WakeUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E12FA2A728CA500637AEA /* WakeUpVC.swift */; };
@@ -64,6 +88,30 @@
 		BD4659612A8211E300C898BB /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		BD4659632A82123200C898BB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		BD486DAD2A7799B7000AE648 /* BottleMask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleMask.swift; sourceTree = "<group>"; };
+		BD55D77E2A8DD92A00B20B69 /* OnBoardingContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContract.swift; sourceTree = "<group>"; };
+		BD55D77F2A8DD92A00B20B69 /* OnBoardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPresenter.swift; sourceTree = "<group>"; };
+		BD55D7802A8DD92A00B20B69 /* OnBoardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingRouter.swift; sourceTree = "<group>"; };
+		BD55D7822A8DD92A00B20B69 /* OnBoardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingInteractor.swift; sourceTree = "<group>"; };
+		BD55D78E2A8DE3BA00B20B69 /* ChooseGenderContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGenderContract.swift; sourceTree = "<group>"; };
+		BD55D78F2A8DE3BA00B20B69 /* ChooseGenderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGenderPresenter.swift; sourceTree = "<group>"; };
+		BD55D7902A8DE3BA00B20B69 /* ChooseGenderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGenderRouter.swift; sourceTree = "<group>"; };
+		BD55D7922A8DE3BA00B20B69 /* ChooseGenderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseGenderInteractor.swift; sourceTree = "<group>"; };
+		BD55D79D2A8DFAE800B20B69 /* WeightContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightContract.swift; sourceTree = "<group>"; };
+		BD55D79E2A8DFAE800B20B69 /* WeightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightPresenter.swift; sourceTree = "<group>"; };
+		BD55D79F2A8DFAE800B20B69 /* WeightRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightRouter.swift; sourceTree = "<group>"; };
+		BD55D7A12A8DFAE800B20B69 /* WeightInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightInteractor.swift; sourceTree = "<group>"; };
+		BD55D7B62A8E26E700B20B69 /* WakeUpContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpContract.swift; sourceTree = "<group>"; };
+		BD55D7B72A8E26E800B20B69 /* WakeUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpPresenter.swift; sourceTree = "<group>"; };
+		BD55D7B82A8E26E800B20B69 /* WakeUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpRouter.swift; sourceTree = "<group>"; };
+		BD55D7BA2A8E26E800B20B69 /* WakeUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpInteractor.swift; sourceTree = "<group>"; };
+		BD55D7C52A8E36C600B20B69 /* BedContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedContract.swift; sourceTree = "<group>"; };
+		BD55D7C62A8E36C600B20B69 /* BedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedPresenter.swift; sourceTree = "<group>"; };
+		BD55D7C72A8E36C600B20B69 /* BedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedRouter.swift; sourceTree = "<group>"; };
+		BD55D7C92A8E36C600B20B69 /* BedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedInteractor.swift; sourceTree = "<group>"; };
+		BD55D7D42A8E3E7B00B20B69 /* WaterReminderContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderContract.swift; sourceTree = "<group>"; };
+		BD55D7D52A8E3E7B00B20B69 /* WaterReminderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderPresenter.swift; sourceTree = "<group>"; };
+		BD55D7D62A8E3E7B00B20B69 /* WaterReminderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderRouter.swift; sourceTree = "<group>"; };
+		BD55D7D82A8E3E7B00B20B69 /* WaterReminderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderInteractor.swift; sourceTree = "<group>"; };
 		BD6845412A7A1CBC00394F6F /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		BD9E12F82A7281E900637AEA /* WeightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightVC.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		BD9E12FA2A728CA500637AEA /* WakeUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpVC.swift; sourceTree = "<group>"; };
@@ -178,8 +226,8 @@
 			children = (
 				BD64339B2A7BD5B800B19D60 /* OnBoardingVC */,
 				BD64339C2A7BD67100B19D60 /* ChooseGenderVC */,
-				BD64339D2A7BD6A500B19D60 /* WeightVC */,
 				BD64339E2A7BD6BC00B19D60 /* WeightPickerVC */,
+				BD64339D2A7BD6A500B19D60 /* WeightVC */,
 				BD6433A02A7BD6E400B19D60 /* WakeUpVC */,
 				BD6433A12A7BD6F100B19D60 /* BedVC */,
 				BDE721892A7E097800BFC3B3 /* WaterReminderVC */,
@@ -188,8 +236,7 @@
 				BD6433A42A7BD73000B19D60 /* HistoryVC */,
 				BD6433A82A7BD78300B19D60 /* DataRecordTableViewCell */,
 				BD6433A52A7BD74000B19D60 /* SettingVC */,
-				BD6433A62A7BD76200B19D60 /* DatabaseClassVC */,
-				BD6433A72A7BD77600B19D60 /* UserDetailsVC */,
+				BD55D7882A8DD9E300B20B69 /* Model */,
 				BD4083582A7264710035007D /* UtilityFunctions */,
 				BD06D9182A850500002366E9 /* Constants */,
 			);
@@ -224,10 +271,263 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		BD64339B2A7BD5B800B19D60 /* OnBoardingVC */ = {
+		BD55D7882A8DD9E300B20B69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7156C7C2A731045000A7173 /* DatabaseClass.swift */,
+				BD6845412A7A1CBC00394F6F /* UserDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD55D7892A8DDA5F00B20B69 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D77E2A8DD92A00B20B69 /* OnBoardingContract.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BD55D78A2A8DDA6600B20B69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D77F2A8DD92A00B20B69 /* OnBoardingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD55D78B2A8DDA6E00B20B69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7802A8DD92A00B20B69 /* OnBoardingRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD55D78C2A8DDA7800B20B69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7822A8DD92A00B20B69 /* OnBoardingInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD55D78D2A8DDA8A00B20B69 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				BD40831A2A72484F0035007D /* OnBoardingVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD55D7982A8DE3BF00B20B69 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D78E2A8DE3BA00B20B69 /* ChooseGenderContract.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BD55D7992A8DE3C600B20B69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D78F2A8DE3BA00B20B69 /* ChooseGenderPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD55D79A2A8DE3CD00B20B69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7902A8DE3BA00B20B69 /* ChooseGenderRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD55D79B2A8DE3D500B20B69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD40835B2A726A1D0035007D /* ChooseGenderVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD55D79C2A8DE3DC00B20B69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7922A8DE3BA00B20B69 /* ChooseGenderInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD55D7A72A8DFB2B00B20B69 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D79D2A8DFAE800B20B69 /* WeightContract.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BD55D7A82A8DFB3200B20B69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D79E2A8DFAE800B20B69 /* WeightPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD55D7A92A8DFB3E00B20B69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D79F2A8DFAE800B20B69 /* WeightRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD55D7AA2A8DFB4500B20B69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD9E12F82A7281E900637AEA /* WeightVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD55D7AB2A8DFB4C00B20B69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7A12A8DFAE800B20B69 /* WeightInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD55D7C02A8E26F600B20B69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD9E12FA2A728CA500637AEA /* WakeUpVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD55D7C12A8E26FE00B20B69 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7B62A8E26E700B20B69 /* WakeUpContract.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BD55D7C22A8E270500B20B69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7B72A8E26E800B20B69 /* WakeUpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD55D7C32A8E270E00B20B69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7B82A8E26E800B20B69 /* WakeUpRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD55D7C42A8E271500B20B69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7BA2A8E26E800B20B69 /* WakeUpInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD55D7CF2A8E36CA00B20B69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD9E12FC2A72916100637AEA /* BedVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD55D7D02A8E36D100B20B69 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7C52A8E36C600B20B69 /* BedContract.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BD55D7D12A8E36DA00B20B69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7C62A8E36C600B20B69 /* BedPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD55D7D22A8E36E100B20B69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7C72A8E36C600B20B69 /* BedRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD55D7D32A8E36EA00B20B69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7C92A8E36C600B20B69 /* BedInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD55D7DE2A8E3E8000B20B69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDE7218A2A7E099A00BFC3B3 /* WaterReminderVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD55D7DF2A8E3E8600B20B69 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7D42A8E3E7B00B20B69 /* WaterReminderContract.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BD55D7E02A8E3E8D00B20B69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7D52A8E3E7B00B20B69 /* WaterReminderPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD55D7E12A8E3E9400B20B69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7D62A8E3E7B00B20B69 /* WaterReminderRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD55D7E22A8E3E9E00B20B69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7D82A8E3E7B00B20B69 /* WaterReminderInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD64339B2A7BD5B800B19D60 /* OnBoardingVC */ = {
+			isa = PBXGroup;
+			children = (
+				BD55D7892A8DDA5F00B20B69 /* Protocol */,
+				BD55D78A2A8DDA6600B20B69 /* Presenter */,
+				BD55D78B2A8DDA6E00B20B69 /* Router */,
+				BD55D78D2A8DDA8A00B20B69 /* View */,
+				BD55D78C2A8DDA7800B20B69 /* Interactor */,
 			);
 			path = OnBoardingVC;
 			sourceTree = "<group>";
@@ -235,7 +535,11 @@
 		BD64339C2A7BD67100B19D60 /* ChooseGenderVC */ = {
 			isa = PBXGroup;
 			children = (
-				BD40835B2A726A1D0035007D /* ChooseGenderVC.swift */,
+				BD55D7982A8DE3BF00B20B69 /* Protocol */,
+				BD55D7992A8DE3C600B20B69 /* Presenter */,
+				BD55D79A2A8DE3CD00B20B69 /* Router */,
+				BD55D79B2A8DE3D500B20B69 /* View */,
+				BD55D79C2A8DE3DC00B20B69 /* Interactor */,
 			);
 			path = ChooseGenderVC;
 			sourceTree = "<group>";
@@ -243,7 +547,11 @@
 		BD64339D2A7BD6A500B19D60 /* WeightVC */ = {
 			isa = PBXGroup;
 			children = (
-				BD9E12F82A7281E900637AEA /* WeightVC.swift */,
+				BD55D7A72A8DFB2B00B20B69 /* Protocol */,
+				BD55D7A82A8DFB3200B20B69 /* Presenter */,
+				BD55D7A92A8DFB3E00B20B69 /* Router */,
+				BD55D7AA2A8DFB4500B20B69 /* View */,
+				BD55D7AB2A8DFB4C00B20B69 /* Interactor */,
 			);
 			path = WeightVC;
 			sourceTree = "<group>";
@@ -259,7 +567,11 @@
 		BD6433A02A7BD6E400B19D60 /* WakeUpVC */ = {
 			isa = PBXGroup;
 			children = (
-				BD9E12FA2A728CA500637AEA /* WakeUpVC.swift */,
+				BD55D7C02A8E26F600B20B69 /* View */,
+				BD55D7C12A8E26FE00B20B69 /* Protocol */,
+				BD55D7C22A8E270500B20B69 /* Presenter */,
+				BD55D7C32A8E270E00B20B69 /* Router */,
+				BD55D7C42A8E271500B20B69 /* Interactor */,
 			);
 			path = WakeUpVC;
 			sourceTree = "<group>";
@@ -267,7 +579,11 @@
 		BD6433A12A7BD6F100B19D60 /* BedVC */ = {
 			isa = PBXGroup;
 			children = (
-				BD9E12FC2A72916100637AEA /* BedVC.swift */,
+				BD55D7CF2A8E36CA00B20B69 /* View */,
+				BD55D7D02A8E36D100B20B69 /* Protocol */,
+				BD55D7D12A8E36DA00B20B69 /* Presenter */,
+				BD55D7D22A8E36E100B20B69 /* Router */,
+				BD55D7D32A8E36EA00B20B69 /* Interactor */,
 			);
 			path = BedVC;
 			sourceTree = "<group>";
@@ -304,22 +620,6 @@
 			path = SettingVC;
 			sourceTree = "<group>";
 		};
-		BD6433A62A7BD76200B19D60 /* DatabaseClassVC */ = {
-			isa = PBXGroup;
-			children = (
-				B7156C7C2A731045000A7173 /* DatabaseClass.swift */,
-			);
-			path = DatabaseClassVC;
-			sourceTree = "<group>";
-		};
-		BD6433A72A7BD77600B19D60 /* UserDetailsVC */ = {
-			isa = PBXGroup;
-			children = (
-				BD6845412A7A1CBC00394F6F /* UserDetails.swift */,
-			);
-			path = UserDetailsVC;
-			sourceTree = "<group>";
-		};
 		BD6433A82A7BD78300B19D60 /* DataRecordTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -333,7 +633,11 @@
 		BDE721892A7E097800BFC3B3 /* WaterReminderVC */ = {
 			isa = PBXGroup;
 			children = (
-				BDE7218A2A7E099A00BFC3B3 /* WaterReminderVC.swift */,
+				BD55D7DE2A8E3E8000B20B69 /* View */,
+				BD55D7DF2A8E3E8600B20B69 /* Protocol */,
+				BD55D7E02A8E3E8D00B20B69 /* Presenter */,
+				BD55D7E12A8E3E9400B20B69 /* Router */,
+				BD55D7E22A8E3E9E00B20B69 /* Interactor */,
 			);
 			path = WaterReminderVC;
 			sourceTree = "<group>";
@@ -467,24 +771,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD55D7DD2A8E3E7B00B20B69 /* WaterReminderInteractor.swift in Sources */,
+				BD55D7DA2A8E3E7B00B20B69 /* WaterReminderPresenter.swift in Sources */,
+				BD55D7DB2A8E3E7B00B20B69 /* WaterReminderRouter.swift in Sources */,
 				BD486DAE2A7799B7000AE648 /* BottleMask.swift in Sources */,
 				BD6845422A7A1CBD00394F6F /* UserDetails.swift in Sources */,
+				BD55D7932A8DE3BA00B20B69 /* ChooseGenderContract.swift in Sources */,
+				BD55D7BB2A8E26E800B20B69 /* WakeUpContract.swift in Sources */,
+				BD55D7BF2A8E26E800B20B69 /* WakeUpInteractor.swift in Sources */,
 				BDE7218B2A7E099A00BFC3B3 /* WaterReminderVC.swift in Sources */,
+				BD55D7A32A8DFAE800B20B69 /* WeightPresenter.swift in Sources */,
 				BD40835A2A7264C20035007D /* ButtonExtensions.swift in Sources */,
 				BD4083072A7244CA0035007D /* AppDelegate.swift in Sources */,
 				BD1D56E12A7CAFA8000CF6F4 /* DataRecordTableViewCell.swift in Sources */,
+				BD55D7832A8DD92A00B20B69 /* OnBoardingContract.swift in Sources */,
 				BD9E12FD2A72916100637AEA /* BedVC.swift in Sources */,
 				BD9E12FF2A72940400637AEA /* HomeVC.swift in Sources */,
+				BD55D7A42A8DFAE800B20B69 /* WeightRouter.swift in Sources */,
 				BD40835C2A726A1D0035007D /* ChooseGenderVC.swift in Sources */,
 				BD9E12FB2A728CA500637AEA /* WakeUpVC.swift in Sources */,
+				BD55D7CB2A8E36C600B20B69 /* BedPresenter.swift in Sources */,
 				BD0D9AFF2A77D52F008FE0AF /* SettingVC.swift in Sources */,
+				BD55D7CC2A8E36C600B20B69 /* BedRouter.swift in Sources */,
 				BD0D9AFD2A77D51C008FE0AF /* HistoryVC.swift in Sources */,
 				BD9E12F92A7281E900637AEA /* WeightVC.swift in Sources */,
 				BD1D56EC2A7CDF3D000CF6F4 /* HeaderTableView.swift in Sources */,
+				BD55D7852A8DD92A00B20B69 /* OnBoardingRouter.swift in Sources */,
+				BD55D7BD2A8E26E800B20B69 /* WakeUpRouter.swift in Sources */,
 				B7156C722A72F5A3000A7173 /* WeightPickerVC.swift in Sources */,
+				BD55D7D92A8E3E7B00B20B69 /* WaterReminderContract.swift in Sources */,
+				BD55D7BC2A8E26E800B20B69 /* WakeUpPresenter.swift in Sources */,
 				B7156C7D2A731045000A7173 /* DatabaseClass.swift in Sources */,
 				BD40831B2A72484F0035007D /* OnBoardingVC.swift in Sources */,
+				BD55D7942A8DE3BA00B20B69 /* ChooseGenderPresenter.swift in Sources */,
+				BD55D7872A8DD92A00B20B69 /* OnBoardingInteractor.swift in Sources */,
 				BD06D9172A850487002366E9 /* Constants.swift in Sources */,
+				BD55D7A62A8DFAE800B20B69 /* WeightInteractor.swift in Sources */,
+				BD55D7A22A8DFAE800B20B69 /* WeightContract.swift in Sources */,
+				BD55D7CE2A8E36C600B20B69 /* BedInteractor.swift in Sources */,
+				BD55D7842A8DD92A00B20B69 /* OnBoardingPresenter.swift in Sources */,
+				BD55D7CA2A8E36C600B20B69 /* BedContract.swift in Sources */,
+				BD55D7972A8DE3BA00B20B69 /* ChooseGenderInteractor.swift in Sources */,
+				BD55D7952A8DE3BA00B20B69 /* ChooseGenderRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

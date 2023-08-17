@@ -73,9 +73,6 @@
                                         <color key="value" red="0.1019607843" green="0.66666666669999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="6NE-dM-F4k"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iRB-dK-Kf0"/>
@@ -149,7 +146,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="ic_bluewaterDrop"/>
                                         <connections>
-                                            <action selector="maleSelectionBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="1hG-LG-Ajp"/>
+                                            <action selector="maleSelectionBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="Zdk-hN-FxH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -175,7 +172,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="ic_pink"/>
                                         <connections>
-                                            <action selector="femaleSelectionBtnTappe:" destination="9c3-Gd-0On" eventType="touchUpInside" id="E2G-eL-fHe"/>
+                                            <action selector="femaleSelectionBtnTappe:" destination="9c3-Gd-0On" eventType="touchUpInside" id="4Ne-tx-zn0"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIe-M4-dqG">
@@ -218,8 +215,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="backBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="4Hw-Fe-lIl"/>
-                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="Q8v-Uw-mNE"/>
+                                    <action selector="backBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="01A-6l-1qU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOs-A0-c0W" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
@@ -241,8 +237,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="8OF-pu-3Mc"/>
-                                    <action selector="nextBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="rje-pw-VBN"/>
+                                    <action selector="nextBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="yAv-Jf-KRD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -332,7 +327,6 @@
                                 <connections>
                                     <action selector="backBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="O86-2F-XFo"/>
                                     <action selector="backBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="atq-Gn-gBu"/>
-                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="taI-sh-Twa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCi-eR-Ef8" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
@@ -354,7 +348,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="XXx-eE-xR8"/>
                                     <action selector="nextBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="mHe-Tu-qAI"/>
                                     <action selector="nextBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="oOs-R2-XMY"/>
                                 </connections>
@@ -441,7 +434,6 @@
                                     <action selector="backBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="Fu5-Rq-UWs"/>
                                     <action selector="backBtnTapped:" destination="ipp-B2-gNX" eventType="touchUpInside" id="v4Z-Ve-nDd"/>
                                     <action selector="backBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="zmZ-pE-D2P"/>
-                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="1oF-1q-Dbv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDB-kA-MFV" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
@@ -463,7 +455,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="KWV-vx-yDK"/>
                                     <action selector="nextBtnTapped:" destination="ipp-B2-gNX" eventType="touchUpInside" id="8zU-r0-YC9"/>
                                     <action selector="nextBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="JDB-Wp-zYL"/>
                                     <action selector="nextBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="NwY-lB-Qwf"/>
@@ -566,7 +557,6 @@
                                     <action selector="backBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="ayu-v1-qi6"/>
                                     <action selector="backBtnTapped:" destination="mdd-Cd-okt" eventType="touchUpInside" id="fTe-4f-yN8"/>
                                     <action selector="backBtnTapped:" destination="ipp-B2-gNX" eventType="touchUpInside" id="qGn-7q-z9g"/>
-                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="WCh-0n-vb7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgj-sI-7nm" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
@@ -588,7 +578,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="QES-kM-wg3"/>
                                     <action selector="nextBtnTapped:" destination="mdd-Cd-okt" eventType="touchUpInside" id="0fW-1V-lUM"/>
                                     <action selector="nextBtnTapped:" destination="ipp-B2-gNX" eventType="touchUpInside" id="6Ca-52-ReB"/>
                                     <action selector="nextBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="c2H-a5-EJA"/>
@@ -693,7 +682,6 @@
                                     <action selector="backBtnTapped:" destination="9c3-Gd-0On" eventType="touchUpInside" id="aVe-E1-HhK"/>
                                     <action selector="backBtnTapped:" destination="mdd-Cd-okt" eventType="touchUpInside" id="oe7-B7-W6E"/>
                                     <action selector="backBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="w53-gZ-KYe"/>
-                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="PPd-Kl-tS1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTN-aB-n01" customClass="GradientButton" customModule="WaterReminder" customModuleProvider="target">
@@ -715,7 +703,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="letsGoBtnTapped:" destination="Bnk-sX-uLG" eventType="touchUpInside" id="quS-Zi-uuA"/>
                                     <action selector="nextBtnTapped:" destination="KTq-V1-IGY" eventType="touchUpInside" id="1vg-C3-9PX"/>
                                     <action selector="nextBtnTapped:" destination="4Ou-bO-UMr" eventType="touchUpInside" id="DEc-7H-d6j"/>
                                     <action selector="nextBtnTapped:" destination="ipp-B2-gNX" eventType="touchUpInside" id="JXj-FU-O0Y"/>
