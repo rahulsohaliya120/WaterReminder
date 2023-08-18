@@ -7,7 +7,6 @@
 // MARK: - Navigation
 
 import UIKit
-import RealmSwift
 
 class SettingVC: UIViewController {
     
@@ -27,19 +26,16 @@ class SettingVC: UIViewController {
     @IBOutlet weak var languageBtn: UIButton!
     
     // MARK: - Properties
-    
-    let realm = try! Realm()
+    var presenter: ViewToPresenterSettingProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        SettingRouter.createModule(vc: self)
         configureViews()
     }
     
     private func configureViews() {
-        reminderSettingView.layer.cornerRadius = 10
-        reminderSettingsOptionsView.layer.cornerRadius = 10
-        generalView.layer.cornerRadius = 10
-        generalOptionsView.layer.cornerRadius = 10
+        presenter?.configureViews(reminderSettingView: reminderSettingView, reminderSettingsOptionsView: reminderSettingsOptionsView, generalView: generalView, generalOptionsView: generalOptionsView)
     }
     
     // MARK: - Actions
@@ -57,25 +53,11 @@ class SettingVC: UIViewController {
     }
     
     @IBAction func bellRingBtnTapped(_ sender: UIButton) {
-        let waterAmountRecord = realm.objects(WaterData.self)
-        
-        let storyBoard: UIStoryboard = UIStoryboard(name: "OnBoarding", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "WaterReminderVC") as! WaterReminderVC
-        if let firstRecord = waterAmountRecord.last {
-            let genderData = firstRecord.gender
-            vc.genderEnum = genderData == 0 ? .male : .female
-            print("Gender Data: \(genderData)")
-        }
-        navigationController?.pushViewController(vc, animated: true);
+        presenter?.navigateToWaterReminderVC(name: "OnBoarding", withIdentifier: "WaterReminderVC", navigationController: navigationController!)
     }
     
     @IBAction func signOutBtnTapped(_ sender: UIButton) {
-        UserDefaults.standard.set(false, forKey: "USER_LOGIN")
-        let storyboard = UIStoryboard(name: "OnBoarding", bundle: nil)
-        let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
-        let rootViewController = storyboard.instantiateViewController(withIdentifier: "OnBoardingVC") as UIViewController
-        navigationController.viewControllers = [rootViewController]
-        AppDelegate.sharedApplication().window?.rootViewController = navigationController
+        presenter?.navigateToOnBoardingVC(name: "OnBoarding", withIdentifier: "OnBoardingVC", navigationController: navigationController!)
     }
     
     @IBAction func dumbleBtnTapped(_ sender: UIButton) {
@@ -89,4 +71,8 @@ class SettingVC: UIViewController {
     @IBAction func languageBtnTapped(_ sender: UIButton) {
         
     }
+}
+
+extension SettingVC: PresenterToViewSettingProtocol{
+    // TODO: Implement View Output Methods
 }

@@ -54,6 +54,19 @@
 		BD55D7DB2A8E3E7B00B20B69 /* WaterReminderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7D62A8E3E7B00B20B69 /* WaterReminderRouter.swift */; };
 		BD55D7DD2A8E3E7B00B20B69 /* WaterReminderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7D82A8E3E7B00B20B69 /* WaterReminderInteractor.swift */; };
 		BD6845422A7A1CBD00394F6F /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6845412A7A1CBC00394F6F /* UserDetails.swift */; };
+		BD72351D2A8F23410021BFFD /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235182A8F23410021BFFD /* HomeContract.swift */; };
+		BD72351E2A8F23410021BFFD /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235192A8F23410021BFFD /* HomePresenter.swift */; };
+		BD72351F2A8F23410021BFFD /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72351A2A8F23410021BFFD /* HomeRouter.swift */; };
+		BD7235212A8F23410021BFFD /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72351C2A8F23410021BFFD /* HomeInteractor.swift */; };
+		BD7235372A8F460D0021BFFD /* SettingContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235322A8F460D0021BFFD /* SettingContract.swift */; };
+		BD7235382A8F460D0021BFFD /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235332A8F460D0021BFFD /* SettingPresenter.swift */; };
+		BD7235392A8F460D0021BFFD /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235342A8F460D0021BFFD /* SettingRouter.swift */; };
+		BD72353B2A8F460D0021BFFD /* SettingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235362A8F460D0021BFFD /* SettingInteractor.swift */; };
+		BD7235552A8F66810021BFFD /* HistoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235502A8F66810021BFFD /* HistoryContract.swift */; };
+		BD7235562A8F66810021BFFD /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235512A8F66810021BFFD /* HistoryPresenter.swift */; };
+		BD7235572A8F66810021BFFD /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235522A8F66810021BFFD /* HistoryRouter.swift */; };
+		BD7235592A8F66810021BFFD /* HistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235542A8F66810021BFFD /* HistoryInteractor.swift */; };
+		BD7235612A8F783B0021BFFD /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235602A8F783B0021BFFD /* UtilityFunctions.swift */; };
 		BD9E12F92A7281E900637AEA /* WeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E12F82A7281E900637AEA /* WeightVC.swift */; };
 		BD9E12FB2A728CA500637AEA /* WakeUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E12FA2A728CA500637AEA /* WakeUpVC.swift */; };
 		BD9E12FD2A72916100637AEA /* BedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9E12FC2A72916100637AEA /* BedVC.swift */; };
@@ -113,6 +126,19 @@
 		BD55D7D62A8E3E7B00B20B69 /* WaterReminderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderRouter.swift; sourceTree = "<group>"; };
 		BD55D7D82A8E3E7B00B20B69 /* WaterReminderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderInteractor.swift; sourceTree = "<group>"; };
 		BD6845412A7A1CBC00394F6F /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		BD7235182A8F23410021BFFD /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		BD7235192A8F23410021BFFD /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		BD72351A2A8F23410021BFFD /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		BD72351C2A8F23410021BFFD /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		BD7235322A8F460D0021BFFD /* SettingContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingContract.swift; sourceTree = "<group>"; };
+		BD7235332A8F460D0021BFFD /* SettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
+		BD7235342A8F460D0021BFFD /* SettingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
+		BD7235362A8F460D0021BFFD /* SettingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingInteractor.swift; sourceTree = "<group>"; };
+		BD7235502A8F66810021BFFD /* HistoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryContract.swift; sourceTree = "<group>"; };
+		BD7235512A8F66810021BFFD /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		BD7235522A8F66810021BFFD /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		BD7235542A8F66810021BFFD /* HistoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractor.swift; sourceTree = "<group>"; };
+		BD7235602A8F783B0021BFFD /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityFunctions.swift; sourceTree = "<group>"; };
 		BD9E12F82A7281E900637AEA /* WeightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightVC.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		BD9E12FA2A728CA500637AEA /* WakeUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpVC.swift; sourceTree = "<group>"; };
 		BD9E12FC2A72916100637AEA /* BedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedVC.swift; sourceTree = "<group>"; };
@@ -234,7 +260,6 @@
 				BD6433A22A7BD70900B19D60 /* HomeVC */,
 				BD6433A32A7BD71C00B19D60 /* BottleMaskVC */,
 				BD6433A42A7BD73000B19D60 /* HistoryVC */,
-				BD6433A82A7BD78300B19D60 /* DataRecordTableViewCell */,
 				BD6433A52A7BD74000B19D60 /* SettingVC */,
 				BD55D7882A8DD9E300B20B69 /* Model */,
 				BD4083582A7264710035007D /* UtilityFunctions */,
@@ -257,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				BD4083592A7264C20035007D /* ButtonExtensions.swift */,
+				BD7235602A8F783B0021BFFD /* UtilityFunctions.swift */,
 			);
 			path = UtilityFunctions;
 			sourceTree = "<group>";
@@ -591,7 +617,11 @@
 		BD6433A22A7BD70900B19D60 /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
-				BD9E12FE2A72940400637AEA /* HomeVC.swift */,
+				BD7235222A8F23460021BFFD /* View */,
+				BD7235232A8F234D0021BFFD /* Protocol */,
+				BD7235242A8F23540021BFFD /* Presenter */,
+				BD7235252A8F235C0021BFFD /* Router */,
+				BD7235262A8F23640021BFFD /* Interactor */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -607,7 +637,12 @@
 		BD6433A42A7BD73000B19D60 /* HistoryVC */ = {
 			isa = PBXGroup;
 			children = (
-				BD0D9AFC2A77D51C008FE0AF /* HistoryVC.swift */,
+				BD6433A82A7BD78300B19D60 /* DataRecordTableViewCell */,
+				BD72354B2A8F65510021BFFD /* View */,
+				BD72355A2A8F66A70021BFFD /* Protocol */,
+				BD72355B2A8F66AE0021BFFD /* Presenter */,
+				BD72355C2A8F66B50021BFFD /* Router */,
+				BD72355D2A8F66BF0021BFFD /* Interactor */,
 			);
 			path = HistoryVC;
 			sourceTree = "<group>";
@@ -615,7 +650,11 @@
 		BD6433A52A7BD74000B19D60 /* SettingVC */ = {
 			isa = PBXGroup;
 			children = (
-				BD0D9AFE2A77D52F008FE0AF /* SettingVC.swift */,
+				BD72353C2A8F463D0021BFFD /* View */,
+				BD72353D2A8F46430021BFFD /* Protocol */,
+				BD72353E2A8F464B0021BFFD /* Presenter */,
+				BD72353F2A8F46530021BFFD /* Router */,
+				BD7235402A8F46580021BFFD /* Interactor */,
 			);
 			path = SettingVC;
 			sourceTree = "<group>";
@@ -628,6 +667,126 @@
 				BD1D56E02A7CAFA8000CF6F4 /* DataRecordTableViewCell.xib */,
 			);
 			path = DataRecordTableViewCell;
+			sourceTree = "<group>";
+		};
+		BD7235222A8F23460021BFFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD9E12FE2A72940400637AEA /* HomeVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD7235232A8F234D0021BFFD /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BD7235182A8F23410021BFFD /* HomeContract.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BD7235242A8F23540021BFFD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD7235192A8F23410021BFFD /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD7235252A8F235C0021BFFD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD72351A2A8F23410021BFFD /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD7235262A8F23640021BFFD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD72351C2A8F23410021BFFD /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD72353C2A8F463D0021BFFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD0D9AFE2A77D52F008FE0AF /* SettingVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD72353D2A8F46430021BFFD /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BD7235322A8F460D0021BFFD /* SettingContract.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BD72353E2A8F464B0021BFFD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD7235332A8F460D0021BFFD /* SettingPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD72353F2A8F46530021BFFD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD7235342A8F460D0021BFFD /* SettingRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD7235402A8F46580021BFFD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD7235362A8F460D0021BFFD /* SettingInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BD72354B2A8F65510021BFFD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD0D9AFC2A77D51C008FE0AF /* HistoryVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD72355A2A8F66A70021BFFD /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BD7235502A8F66810021BFFD /* HistoryContract.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BD72355B2A8F66AE0021BFFD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BD7235512A8F66810021BFFD /* HistoryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BD72355C2A8F66B50021BFFD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BD7235522A8F66810021BFFD /* HistoryRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BD72355D2A8F66BF0021BFFD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BD7235542A8F66810021BFFD /* HistoryInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		BDE721892A7E097800BFC3B3 /* WaterReminderVC */ = {
@@ -774,20 +933,28 @@
 				BD55D7DD2A8E3E7B00B20B69 /* WaterReminderInteractor.swift in Sources */,
 				BD55D7DA2A8E3E7B00B20B69 /* WaterReminderPresenter.swift in Sources */,
 				BD55D7DB2A8E3E7B00B20B69 /* WaterReminderRouter.swift in Sources */,
+				BD7235562A8F66810021BFFD /* HistoryPresenter.swift in Sources */,
+				BD7235372A8F460D0021BFFD /* SettingContract.swift in Sources */,
 				BD486DAE2A7799B7000AE648 /* BottleMask.swift in Sources */,
 				BD6845422A7A1CBD00394F6F /* UserDetails.swift in Sources */,
 				BD55D7932A8DE3BA00B20B69 /* ChooseGenderContract.swift in Sources */,
+				BD7235382A8F460D0021BFFD /* SettingPresenter.swift in Sources */,
 				BD55D7BB2A8E26E800B20B69 /* WakeUpContract.swift in Sources */,
 				BD55D7BF2A8E26E800B20B69 /* WakeUpInteractor.swift in Sources */,
 				BDE7218B2A7E099A00BFC3B3 /* WaterReminderVC.swift in Sources */,
 				BD55D7A32A8DFAE800B20B69 /* WeightPresenter.swift in Sources */,
 				BD40835A2A7264C20035007D /* ButtonExtensions.swift in Sources */,
 				BD4083072A7244CA0035007D /* AppDelegate.swift in Sources */,
+				BD7235552A8F66810021BFFD /* HistoryContract.swift in Sources */,
 				BD1D56E12A7CAFA8000CF6F4 /* DataRecordTableViewCell.swift in Sources */,
 				BD55D7832A8DD92A00B20B69 /* OnBoardingContract.swift in Sources */,
 				BD9E12FD2A72916100637AEA /* BedVC.swift in Sources */,
+				BD7235392A8F460D0021BFFD /* SettingRouter.swift in Sources */,
 				BD9E12FF2A72940400637AEA /* HomeVC.swift in Sources */,
 				BD55D7A42A8DFAE800B20B69 /* WeightRouter.swift in Sources */,
+				BD7235592A8F66810021BFFD /* HistoryInteractor.swift in Sources */,
+				BD7235612A8F783B0021BFFD /* UtilityFunctions.swift in Sources */,
+				BD7235572A8F66810021BFFD /* HistoryRouter.swift in Sources */,
 				BD40835C2A726A1D0035007D /* ChooseGenderVC.swift in Sources */,
 				BD9E12FB2A728CA500637AEA /* WakeUpVC.swift in Sources */,
 				BD55D7CB2A8E36C600B20B69 /* BedPresenter.swift in Sources */,
@@ -797,6 +964,8 @@
 				BD9E12F92A7281E900637AEA /* WeightVC.swift in Sources */,
 				BD1D56EC2A7CDF3D000CF6F4 /* HeaderTableView.swift in Sources */,
 				BD55D7852A8DD92A00B20B69 /* OnBoardingRouter.swift in Sources */,
+				BD72351D2A8F23410021BFFD /* HomeContract.swift in Sources */,
+				BD72353B2A8F460D0021BFFD /* SettingInteractor.swift in Sources */,
 				BD55D7BD2A8E26E800B20B69 /* WakeUpRouter.swift in Sources */,
 				B7156C722A72F5A3000A7173 /* WeightPickerVC.swift in Sources */,
 				BD55D7D92A8E3E7B00B20B69 /* WaterReminderContract.swift in Sources */,
@@ -804,15 +973,18 @@
 				B7156C7D2A731045000A7173 /* DatabaseClass.swift in Sources */,
 				BD40831B2A72484F0035007D /* OnBoardingVC.swift in Sources */,
 				BD55D7942A8DE3BA00B20B69 /* ChooseGenderPresenter.swift in Sources */,
+				BD72351F2A8F23410021BFFD /* HomeRouter.swift in Sources */,
 				BD55D7872A8DD92A00B20B69 /* OnBoardingInteractor.swift in Sources */,
 				BD06D9172A850487002366E9 /* Constants.swift in Sources */,
 				BD55D7A62A8DFAE800B20B69 /* WeightInteractor.swift in Sources */,
+				BD7235212A8F23410021BFFD /* HomeInteractor.swift in Sources */,
 				BD55D7A22A8DFAE800B20B69 /* WeightContract.swift in Sources */,
 				BD55D7CE2A8E36C600B20B69 /* BedInteractor.swift in Sources */,
 				BD55D7842A8DD92A00B20B69 /* OnBoardingPresenter.swift in Sources */,
 				BD55D7CA2A8E36C600B20B69 /* BedContract.swift in Sources */,
 				BD55D7972A8DE3BA00B20B69 /* ChooseGenderInteractor.swift in Sources */,
 				BD55D7952A8DE3BA00B20B69 /* ChooseGenderRouter.swift in Sources */,
+				BD72351E2A8F23410021BFFD /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

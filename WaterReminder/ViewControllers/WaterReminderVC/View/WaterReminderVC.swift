@@ -66,6 +66,6 @@ class WaterReminderVC: UIViewController {
     }
 }
 
-extension WaterReminderVC: PresenterToViewWaterReminderProtocol{
+extension WaterReminderVC: PresenterToViewWaterReminderProtocol {
     // TODO: Implement View Output Methods
 }
