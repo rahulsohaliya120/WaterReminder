@@ -69,7 +69,6 @@ class WeightPickerView: UIPickerView, UIPickerViewDataSource, UIPickerViewDelega
             attributes[.font] = UIFont.systemFont(ofSize: 17, weight: .bold)
         } else {
             attributes[.foregroundColor] = currentThemeColor
-            
             attributes[.font] = UIFont.systemFont(ofSize: 17, weight: .bold)
         }
         

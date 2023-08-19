@@ -20,8 +20,8 @@
         }
       ],
       "color" : {
-        "platform" : "osx",
-        "reference" : "alternatingContentBackgroundColor"
+        "platform" : "ios",
+        "reference" : "systemBackgroundColor"
       },
       "idiom" : "universal"
     }

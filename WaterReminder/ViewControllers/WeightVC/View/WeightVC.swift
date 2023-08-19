@@ -71,6 +71,7 @@ extension WeightVC: WeightPickerViewDelegate {
             weightPicker.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview(weightPicker)
             
+            
             NSLayoutConstraint.activate([
                 
                 weightPicker.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -117,6 +118,6 @@ extension WeightVC: WeightPickerViewDelegate {
     }
 }
 
-extension WeightVC: PresenterToViewWeightProtocol{
+extension WeightVC: PresenterToViewWeightProtocol {
     // TODO: Implement View Output Methods
 }

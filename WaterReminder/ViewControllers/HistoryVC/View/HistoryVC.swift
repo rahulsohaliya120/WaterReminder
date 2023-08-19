@@ -157,7 +157,7 @@ extension HistoryVC: UITableViewDataSource, UITableViewDelegate {
     @objc func editButtonTapped(_ sender: UIButton) {
         presenter?.editBtnTapped(dataRecordTableView: dataRecordTableView, completion: { selectedRecord in
             self.selectedTodayRecord = selectedRecord
-        }, arrTodayData: arrTodayData, sender: sender, chartView: chartView, selectedTimeInterval: selectedTimeInterval, vc: self)
+        }, arrTodayData: arrTodayData, sender: sender, chartView: chartView, selectedTimeInterval: selectedTimeInterval, vc: self, selectedIndex: -1)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

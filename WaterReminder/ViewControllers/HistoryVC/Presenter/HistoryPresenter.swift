@@ -42,8 +42,8 @@ class HistoryPresenter: ViewToPresenterHistoryProtocol {
         interactor?.deleteBtnTapped(dataRecordTableView: dataRecordTableView, arrTodayData: arrTodayData, sender: sender, chartView: chartView, selectedTimeInterval: selectedTimeInterval, completion: completion)
     }
     
-    func editBtnTapped(dataRecordTableView: UITableView, completion: (TodayRecord) -> Void, arrTodayData: [TodayRecord], sender: UIButton, chartView: BarChartView, selectedTimeInterval: TimeIntervalSegment, vc: HistoryVC) {
-        interactor?.editBtnTapped(dataRecordTableView: dataRecordTableView, completion: completion, arrTodayData: arrTodayData, sender: sender, chartView: chartView, selectedTimeInterval: selectedTimeInterval, vc: vc)
+    func editBtnTapped(dataRecordTableView: UITableView, completion: (TodayRecord) -> Void, arrTodayData: [TodayRecord], sender: UIButton, chartView: BarChartView, selectedTimeInterval: TimeIntervalSegment, vc: HistoryVC, selectedIndex: Int) {
+        interactor?.editBtnTapped(dataRecordTableView: dataRecordTableView, completion: completion, arrTodayData: arrTodayData, sender: sender, chartView: chartView, selectedTimeInterval: selectedTimeInterval, vc: vc, selectedIndex: selectedIndex)
     }
     
 }

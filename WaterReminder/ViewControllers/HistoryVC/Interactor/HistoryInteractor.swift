@@ -139,7 +139,7 @@ class HistoryInteractor: PresenterToInteractorHistoryProtocol {
         }
     }
     
-    func editBtnTapped(dataRecordTableView: UITableView, completion: (TodayRecord) -> Void, arrTodayData: [TodayRecord], sender: UIButton, chartView: BarChartView, selectedTimeInterval: TimeIntervalSegment, vc: HistoryVC) {
+    func editBtnTapped(dataRecordTableView: UITableView, completion: (TodayRecord) -> Void, arrTodayData: [TodayRecord], sender: UIButton, chartView: BarChartView, selectedTimeInterval: TimeIntervalSegment, vc: HistoryVC, selectedIndex: Int) {
         let selectedRecord = arrTodayData[sender.tag]
         completion(selectedRecord)
         
@@ -195,6 +195,7 @@ class HistoryInteractor: PresenterToInteractorHistoryProtocol {
                     }
                 }
                 self.updateChart(with: realm.objects(WaterAmount.self), chartView: chartView, selectedTimeInterval: selectedTimeInterval)
+                vc.selectedIndex = -1
                 dataRecordTableView.reloadData()
                 NotificationCenter.default.post(name: Notification.Name("TodayRecordDeleted"), object: nil)
             } catch {
