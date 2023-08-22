@@ -72,11 +72,11 @@ class HomeVC: UIViewController {
     }
     
     func updateWaveAnimationProgress() {
-        presenter?.updateWaveAnimationProgress(wave: wave, updateProgressLabel: updateProgressLabel)
+        presenter?.updateWaveAnimationProgress(wave: wave, updateProgressLabel: updateProgressLabel, bottleView: bottleView)
     }
     
     @objc func updateWaterAmountLabels() {
-        presenter?.updateWaterAmount(updateProgressLabel: updateProgressLabel, completedMlLabel: completedMlLabel, vc: self)
+        presenter?.updateWaterAmount(updateProgressLabel: updateProgressLabel, completedMlLabel: completedMlLabel, vc: self, bottleView: bottleView)
         self.updateWaveAnimationProgress()
     }
     

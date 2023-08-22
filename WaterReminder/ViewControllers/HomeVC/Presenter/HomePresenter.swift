@@ -51,7 +51,7 @@ class HomePresenter: ViewToPresenterHomeProtocol {
         bottleView.mask = wave.mask
     }
     
-    func updateWaveAnimationProgress(wave: WaveAnimationView, updateProgressLabel: UILabel) {
+    func updateWaveAnimationProgress(wave: WaveAnimationView, updateProgressLabel: UILabel, bottleView: BottleMaskView) {
         let realm = try! Realm()
         let getData = realm.objects(WaterAmount.self).last
         let totalWaterConsumed = getData?.amountInMilliliters ?? 0
@@ -59,11 +59,21 @@ class HomePresenter: ViewToPresenterHomeProtocol {
         wave.progress = newProgress
         updateProgressLabel.text = "\(totalWaterConsumed) ml"
         wave.startAnimation()
+        if totalWaterConsumed == 0 {
+            bottleView.isHidden = true
+        } else {
+            bottleView.isHidden = false
+        }
     }
     
     
-    func updateWaterAmount(updateProgressLabel: UILabel, completedMlLabel: UILabel, vc: HomeVC) {
+    func updateWaterAmount(updateProgressLabel: UILabel, completedMlLabel: UILabel, vc: HomeVC, bottleView: BottleMaskView) {
         if let todayWaterAmount = vc.realm.objects(WaterAmount.self).filter({ Calendar.current.isDateInToday($0.date)}).first {
+            if todayWaterAmount.amountInMilliliters == 0 {
+                bottleView.isHidden = true
+            } else {
+                bottleView.isHidden = false
+            }
             vc.updateProgressLabel.text = "\(todayWaterAmount.amountInMilliliters) ml"
             vc.completedMlLabel.text = "\(todayWaterAmount.amountInMilliliters) ml"
         }

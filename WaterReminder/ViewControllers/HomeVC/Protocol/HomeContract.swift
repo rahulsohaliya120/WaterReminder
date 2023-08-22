@@ -30,8 +30,8 @@ protocol ViewToPresenterHomeProtocol {
     func tabbarConfiguration(tabbarView: UIView)
     func fetchLastWaterAmountData(updateProgressLabel: UILabel, completedMlLabel: UILabel)
     func waveAnimationCustomization(wave: WaveAnimationView, bottleView: UIView)
-    func updateWaveAnimationProgress(wave: WaveAnimationView, updateProgressLabel: UILabel)
-    func updateWaterAmount(updateProgressLabel: UILabel, completedMlLabel: UILabel, vc: HomeVC)
+    func updateWaveAnimationProgress(wave: WaveAnimationView, updateProgressLabel: UILabel, bottleView: BottleMaskView)
+    func updateWaterAmount(updateProgressLabel: UILabel, completedMlLabel: UILabel, vc: HomeVC, bottleView: BottleMaskView)
 }
 
 

@@ -18,24 +18,16 @@ class HistoryPresenter: ViewToPresenterHistoryProtocol {
     var router: PresenterToRouterHistoryProtocol?
     
     func showDataRecordTableViewCustomization(dataRecordTableView: UITableView) {
-        dataRecordTableView.isHidden = true
+        dataRecordTableView.isHidden = false
         dataRecordTableView.layer.cornerRadius = 10
-    }
-    
-    func showMainViewOfChartCustomization(mainViewOfChart: UIView) {
-        mainViewOfChart.layer.cornerRadius = 10
-    }
-    
-    func showUpdateChart(with data: Results<WaterAmount>, chartView: BarChartView, selectedTimeInterval: TimeIntervalSegment) {
-        interactor?.updateChart(with: data, chartView: chartView, selectedTimeInterval: selectedTimeInterval)
     }
     
     func registerNib(tableView: UITableView, nibName: String, forCellReuseIdentifier: String) {
         tableView.register(UINib(nibName: nibName, bundle: nil), forCellReuseIdentifier: forCellReuseIdentifier)
     }
     
-    func showWaterAmountUpdation(completion: ([TodayRecord]) -> Void, chartView: BarChartView, selectedTimeInterval: TimeIntervalSegment) {
-        interactor?.waterAmountUpdation(completion: completion, chartView: chartView, selectedTimeInterval: selectedTimeInterval)
+    func showWaterAmountUpdation(completion: ([TodayRecord]) -> Void) {
+        interactor?.waterAmountUpdation(completion: completion)
     }
     
     func deleteBtnTapped(dataRecordTableView: UITableView, arrTodayData: [TodayRecord], sender: UIButton, chartView: BarChartView, selectedTimeInterval: TimeIntervalSegment ,completion: (Int) -> Void) {
@@ -45,7 +37,6 @@ class HistoryPresenter: ViewToPresenterHistoryProtocol {
     func editBtnTapped(dataRecordTableView: UITableView, completion: (TodayRecord) -> Void, arrTodayData: [TodayRecord], sender: UIButton, chartView: BarChartView, selectedTimeInterval: TimeIntervalSegment, vc: HistoryVC, selectedIndex: Int) {
         interactor?.editBtnTapped(dataRecordTableView: dataRecordTableView, completion: completion, arrTodayData: arrTodayData, sender: sender, chartView: chartView, selectedTimeInterval: selectedTimeInterval, vc: vc, selectedIndex: selectedIndex)
     }
-    
 }
 
 extension HistoryPresenter: InteractorToPresenterHistoryProtocol {

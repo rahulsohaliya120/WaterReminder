@@ -17,12 +17,8 @@ class HistoryVC: UIViewController {
     // MARK: - IBOutlets
     
     @IBOutlet weak var segmentController: BetterSegmentedControl!
-    @IBOutlet weak var chartView: BarChartView!
     @IBOutlet weak var dataRecordTableView: UITableView!
     @IBOutlet weak var backBtn: UIButton!
-    @IBOutlet weak var hydrateBtn: UIButton!
-    @IBOutlet weak var weightBtn: UIButton!
-    @IBOutlet weak var mainViewOfChart: UIView!
     
     // MARK: - Properties
     var presenter: ViewToPresenterHistoryProtocol?
@@ -32,6 +28,7 @@ class HistoryVC: UIViewController {
     var selectedIndex: Int = -1
     var arrTodayData = [TodayRecord]()
     var selectedTodayRecord: TodayRecord?
+    var isHydrateBtnSelected: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,29 +36,15 @@ class HistoryVC: UIViewController {
         configureSegment()
         nibRegister()
         dataRecordTableViewCustomization()
-        mainViewOfChartCustomization()
-        configureTableHeaderView()
-        waterAmountUpdation()
+        presenter?.showWaterAmountUpdation(completion: { arrTodayData in
+            self.arrTodayData = arrTodayData
+        })
         
         NotificationCenter.default.post(name: Notification.Name("WaterAmountUpdated"), object: nil)
     }
     
-    func waterAmountUpdation() {
-        presenter?.showWaterAmountUpdation(completion: { arrTodayData in
-            self.arrTodayData = arrTodayData
-        }, chartView: chartView, selectedTimeInterval: selectedTimeInterval)
-    }
-    
     private func dataRecordTableViewCustomization() {
         presenter?.showDataRecordTableViewCustomization(dataRecordTableView: dataRecordTableView)
-    }
-    
-    private func mainViewOfChartCustomization() {
-        presenter?.showMainViewOfChartCustomization(mainViewOfChart: mainViewOfChart)
-    }
-    
-    private func updateChart(with data: Results<WaterAmount>) {
-        presenter?.showUpdateChart(with: data, chartView: chartView, selectedTimeInterval: selectedTimeInterval)
     }
     
     private func configureSegment() {
@@ -76,18 +59,20 @@ class HistoryVC: UIViewController {
     @objc func segmentControllerValueChanged(_ sender: BetterSegmentedControl) {
         if let selectedSegmentIndex = TimeIntervalSegment(rawValue: Int(sender.index)) {
             selectedTimeInterval = selectedSegmentIndex
-            let waterAmountData = realm.objects(WaterAmount.self)
-            updateChart(with: waterAmountData)
+            
+            let indexPath = IndexPath(row: 0, section: 0)
+            
+            if let cell = dataRecordTableView.cellForRow(at: indexPath) as? ChartTableViewCell {
+                let waterAmountData = realm.objects(WaterAmount.self)
+                cell.updateChart(with: waterAmountData)
+            }
+            dataRecordTableView.reloadData()
         }
     }
     
     private func nibRegister() {
         presenter?.registerNib(tableView: dataRecordTableView, nibName: "DataRecordTableViewCell", forCellReuseIdentifier: "DataRecordTableViewCell")
-    }
-    
-    private func configureTableHeaderView() {
-        let headerView = HeaderTableView(frame: CGRect(x: 0, y: 0, width: dataRecordTableView.bounds.width, height: 50))
-        dataRecordTableView.tableHeaderView = headerView
+        presenter?.registerNib(tableView: dataRecordTableView, nibName: "ChartTableViewCell", forCellReuseIdentifier: "ChartTableViewCell")
     }
     
     // MARK: - Actions
@@ -95,69 +80,103 @@ class HistoryVC: UIViewController {
     @IBAction func backBtnTapped(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
-    
-    @IBAction func hydrateBtnTapped(_ sender: UIButton) {
-        dataRecordTableView.isHidden = false
-    }
-    
-    @IBAction func weightBtnTapped(_ sender: UIButton) {
-        
-    }
 }
 
 extension HistoryVC: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        if isHydrateBtnSelected {
+            return 2
+        } else {
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrTodayData.count
+        if isHydrateBtnSelected {
+            if section == 0 {
+                return 1
+            } else {
+                return arrTodayData.count
+            }
+        } else {
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: DataRecordTableViewCell = dataRecordTableView.dequeueReusableCell(withIdentifier: "DataRecordTableViewCell", for: indexPath) as! DataRecordTableViewCell
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeStyle = .short
-        
-        cell.waterLbl.text = "\(arrTodayData[indexPath.row].waterRecordML) ml"
-        cell.bottomWaterLbl.text = "\(arrTodayData[indexPath.row].waterRecordML) ml"
-        
-        let timeString = dateFormatter.string(from: arrTodayData[indexPath.row].time)
-        cell.topTimeLbl.text = timeString
-        cell.bottomTimeLbl.text = timeString
-        
-        if indexPath.row == selectedIndex {
-            cell.deleteBtn.isHidden = false
-            cell.bottomStackView.isHidden = false
-            cell.editBtn.isHidden = false
-            cell.waterGlassImgView.isHidden = true
+        if isHydrateBtnSelected {
+            
+            if indexPath.section == 0 {
+                
+                let cell: ChartTableViewCell = dataRecordTableView.dequeueReusableCell(withIdentifier: "ChartTableViewCell", for: indexPath) as! ChartTableViewCell
+                cell.selectedTimeInterval = self.selectedTimeInterval
+                cell.waterAmountUpdation()
+                cell.hydrateBtn.tag = indexPath.row
+                cell.hydrateBtn.addTarget(self, action: #selector(hydrateButtonTapped(_:)), for: .touchUpInside)
+                return cell
+                
+            } else {
+                let cell: DataRecordTableViewCell = dataRecordTableView.dequeueReusableCell(withIdentifier: "DataRecordTableViewCell", for: indexPath) as! DataRecordTableViewCell
+                let dateFormatter = DateFormatter()
+                dateFormatter.timeStyle = .short
+                
+                cell.waterLbl.text = "\(arrTodayData[indexPath.row].waterRecordML) ml"
+                cell.bottomWaterLbl.text = "\(arrTodayData[indexPath.row].waterRecordML) ml"
+                
+                let timeString = dateFormatter.string(from: arrTodayData[indexPath.row].time)
+                cell.topTimeLbl.text = timeString
+                cell.bottomTimeLbl.text = timeString
+                
+                if indexPath.row == selectedIndex {
+                    cell.deleteBtn.isHidden = false
+                    cell.bottomStackView.isHidden = false
+                    cell.editBtn.isHidden = false
+                    cell.waterGlassImgView.isHidden = true
+                } else {
+                    cell.bottomStackView.isHidden = true
+                    cell.waterGlassImgView.isHidden = false
+                    cell.deleteBtn.isHidden = true
+                }
+                
+                cell.deleteBtn.tag = indexPath.row
+                cell.deleteBtn.addTarget(self, action: #selector(deleteButtonTapped(_:)), for: .touchUpInside)
+                
+                cell.editBtn.tag = indexPath.row
+                cell.editBtn.addTarget(self, action: #selector(editButtonTapped(_:)), for: .touchUpInside)
+                
+                return cell
+            }
+            
         } else {
-            cell.bottomStackView.isHidden = true
-            cell.waterGlassImgView.isHidden = false
-            cell.deleteBtn.isHidden = true
+            let cell: ChartTableViewCell = dataRecordTableView.dequeueReusableCell(withIdentifier: "ChartTableViewCell", for: indexPath) as! ChartTableViewCell
+            cell.selectedTimeInterval = self.selectedTimeInterval
+            cell.waterAmountUpdation()
+            cell.hydrateBtn.tag = indexPath.row
+            cell.hydrateBtn.addTarget(self, action: #selector(hydrateButtonTapped(_:)), for: .touchUpInside)
+            return cell
         }
-        
-        cell.deleteBtn.tag = indexPath.row
-        cell.deleteBtn.addTarget(self, action: #selector(deleteButtonTapped(_:)), for: .touchUpInside)
-        
-        cell.editBtn.tag = indexPath.row
-        cell.editBtn.addTarget(self, action: #selector(editButtonTapped(_:)), for: .touchUpInside)
-        
-        return cell
+    }
+    
+    @objc func hydrateButtonTapped(_ sender: UIButton) {
+        isHydrateBtnSelected = true
+        dataRecordTableView.reloadData()
     }
     
     @objc func deleteButtonTapped(_ sender: UIButton) {
-        presenter?.deleteBtnTapped(dataRecordTableView: dataRecordTableView, arrTodayData: arrTodayData, sender: sender, chartView: chartView, selectedTimeInterval: selectedTimeInterval, completion: { index in
+        let indexPath = IndexPath(row: 0, section: 0)
+        let cell = dataRecordTableView.cellForRow(at: indexPath) as! ChartTableViewCell
+        presenter?.deleteBtnTapped(dataRecordTableView: dataRecordTableView, arrTodayData: arrTodayData, sender: sender, chartView: cell.chartView, selectedTimeInterval: selectedTimeInterval, completion: { index in
             arrTodayData.remove(at: index)
         })
     }
     
     @objc func editButtonTapped(_ sender: UIButton) {
+        let indexPath = IndexPath(row: 0, section: 0)
+        let cell = dataRecordTableView.cellForRow(at: indexPath) as! ChartTableViewCell
         presenter?.editBtnTapped(dataRecordTableView: dataRecordTableView, completion: { selectedRecord in
             self.selectedTodayRecord = selectedRecord
-        }, arrTodayData: arrTodayData, sender: sender, chartView: chartView, selectedTimeInterval: selectedTimeInterval, vc: self, selectedIndex: -1)
+        }, arrTodayData: arrTodayData, sender: sender, chartView: cell.chartView, selectedTimeInterval: selectedTimeInterval, vc: self, selectedIndex: -1)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -167,6 +186,19 @@ extension HistoryVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedIndex = indexPath.row
         dataRecordTableView.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if section == 1 {
+            let headerView = HeaderTableView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 50))
+            return headerView
+        } else {
+            return UIView()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return section == 1 ? 50 : 0
     }
 }
 

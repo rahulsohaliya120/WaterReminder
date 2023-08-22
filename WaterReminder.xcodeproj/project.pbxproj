@@ -53,6 +53,8 @@
 		BD55D7DA2A8E3E7B00B20B69 /* WaterReminderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7D52A8E3E7B00B20B69 /* WaterReminderPresenter.swift */; };
 		BD55D7DB2A8E3E7B00B20B69 /* WaterReminderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7D62A8E3E7B00B20B69 /* WaterReminderRouter.swift */; };
 		BD55D7DD2A8E3E7B00B20B69 /* WaterReminderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55D7D82A8E3E7B00B20B69 /* WaterReminderInteractor.swift */; };
+		BD6289292A9492DB001A1F5E /* ChartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD6289272A9492DB001A1F5E /* ChartTableViewCell.xib */; };
+		BD62892A2A9492DB001A1F5E /* ChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6289282A9492DB001A1F5E /* ChartTableViewCell.swift */; };
 		BD6845422A7A1CBD00394F6F /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6845412A7A1CBC00394F6F /* UserDetails.swift */; };
 		BD72351D2A8F23410021BFFD /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235182A8F23410021BFFD /* HomeContract.swift */; };
 		BD72351E2A8F23410021BFFD /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7235192A8F23410021BFFD /* HomePresenter.swift */; };
@@ -125,6 +127,8 @@
 		BD55D7D52A8E3E7B00B20B69 /* WaterReminderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderPresenter.swift; sourceTree = "<group>"; };
 		BD55D7D62A8E3E7B00B20B69 /* WaterReminderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderRouter.swift; sourceTree = "<group>"; };
 		BD55D7D82A8E3E7B00B20B69 /* WaterReminderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderInteractor.swift; sourceTree = "<group>"; };
+		BD6289272A9492DB001A1F5E /* ChartTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartTableViewCell.xib; sourceTree = "<group>"; };
+		BD6289282A9492DB001A1F5E /* ChartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTableViewCell.swift; sourceTree = "<group>"; };
 		BD6845412A7A1CBC00394F6F /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		BD7235182A8F23410021BFFD /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
 		BD7235192A8F23410021BFFD /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -546,6 +550,15 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		BD6289262A9492DB001A1F5E /* ChartTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BD6289272A9492DB001A1F5E /* ChartTableViewCell.xib */,
+				BD6289282A9492DB001A1F5E /* ChartTableViewCell.swift */,
+			);
+			path = ChartTableViewCell;
+			sourceTree = "<group>";
+		};
 		BD64339B2A7BD5B800B19D60 /* OnBoardingVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -637,6 +650,7 @@
 		BD6433A42A7BD73000B19D60 /* HistoryVC */ = {
 			isa = PBXGroup;
 			children = (
+				BD6289262A9492DB001A1F5E /* ChartTableViewCell */,
 				BD6433A82A7BD78300B19D60 /* DataRecordTableViewCell */,
 				BD72354B2A8F65510021BFFD /* View */,
 				BD72355A2A8F66A70021BFFD /* Protocol */,
@@ -873,6 +887,7 @@
 				BD4659642A82123200C898BB /* Home.storyboard in Resources */,
 				BD4083132A7244CE0035007D /* LaunchScreen.storyboard in Resources */,
 				BD4083562A724DEE0035007D /* Roboto-Bold.ttf in Resources */,
+				BD6289292A9492DB001A1F5E /* ChartTableViewCell.xib in Resources */,
 				BD4083572A724DEE0035007D /* Roboto-Medium.ttf in Resources */,
 				BD40833B2A724CD10035007D /* Fredoka-Medium.ttf in Resources */,
 				BD4083102A7244CE0035007D /* Assets.xcassets in Resources */,
@@ -970,6 +985,7 @@
 				B7156C722A72F5A3000A7173 /* WeightPickerVC.swift in Sources */,
 				BD55D7D92A8E3E7B00B20B69 /* WaterReminderContract.swift in Sources */,
 				BD55D7BC2A8E26E800B20B69 /* WakeUpPresenter.swift in Sources */,
+				BD62892A2A9492DB001A1F5E /* ChartTableViewCell.swift in Sources */,
 				B7156C7D2A731045000A7173 /* DatabaseClass.swift in Sources */,
 				BD40831B2A72484F0035007D /* OnBoardingVC.swift in Sources */,
 				BD55D7942A8DE3BA00B20B69 /* ChooseGenderPresenter.swift in Sources */,

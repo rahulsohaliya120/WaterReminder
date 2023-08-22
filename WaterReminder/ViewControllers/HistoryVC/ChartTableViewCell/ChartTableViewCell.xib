@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChartTableViewCell" id="KGk-i7-Jjw" customClass="ChartTableViewCell" customModule="WaterReminder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edD-Iw-Ja3">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="300"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwn-TR-2hP">
+                                <rect key="frame" x="0.0" y="0.0" width="372" height="35"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QmC-CZ-ogZ">
+                                        <rect key="frame" x="8" y="0.0" width="356" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwM-at-h4U">
+                                                <rect key="frame" x="0.0" y="0.0" width="177.5" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="  Hydrate" image="ic_barWaterDrop">
+                                                    <color key="titleColor" name="chartTopBtn"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g18-qO-seL">
+                                                <rect key="frame" x="177.5" y="0.0" width="1" height="35"/>
+                                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1" id="xfo-AG-wAW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e90-3y-7zx">
+                                                <rect key="frame" x="178.5" y="0.0" width="177.5" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="  Weight" image="ic_barWeight">
+                                                    <color key="titleColor" name="chartTopBtn"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cwM-at-h4U" firstAttribute="width" secondItem="e90-3y-7zx" secondAttribute="width" id="vr5-vv-kDN"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QmC-CZ-ogZ" firstAttribute="top" secondItem="gwn-TR-2hP" secondAttribute="top" id="Gj2-5V-zTM"/>
+                                    <constraint firstAttribute="height" constant="35" id="Lhn-E9-1Mu"/>
+                                    <constraint firstItem="QmC-CZ-ogZ" firstAttribute="leading" secondItem="gwn-TR-2hP" secondAttribute="leading" constant="8" id="c5m-g7-br0"/>
+                                    <constraint firstAttribute="bottom" secondItem="QmC-CZ-ogZ" secondAttribute="bottom" id="lIM-6y-LiX"/>
+                                    <constraint firstAttribute="trailing" secondItem="QmC-CZ-ogZ" secondAttribute="trailing" constant="8" id="ldR-iU-Baa"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkJ-fD-lhi">
+                                <rect key="frame" x="0.0" y="34" width="372" height="1"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMG-Ly-Sd6" customClass="BarChartView" customModule="DGCharts">
+                                <rect key="frame" x="8" y="43" width="356" height="249"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="chartViewBackground"/>
+                        <constraints>
+                            <constraint firstItem="tkJ-fD-lhi" firstAttribute="leading" secondItem="edD-Iw-Ja3" secondAttribute="leading" id="6hK-yd-mX6"/>
+                            <constraint firstAttribute="height" constant="300" id="ELx-cO-yLf"/>
+                            <constraint firstItem="gwn-TR-2hP" firstAttribute="top" secondItem="edD-Iw-Ja3" secondAttribute="top" id="SMg-1C-6uc"/>
+                            <constraint firstItem="DMG-Ly-Sd6" firstAttribute="top" secondItem="tkJ-fD-lhi" secondAttribute="bottom" constant="8" id="Wdc-K1-BuN"/>
+                            <constraint firstItem="DMG-Ly-Sd6" firstAttribute="leading" secondItem="edD-Iw-Ja3" secondAttribute="leading" constant="8" id="XcC-dx-Cnf"/>
+                            <constraint firstAttribute="trailing" secondItem="gwn-TR-2hP" secondAttribute="trailing" id="c46-fz-3VM"/>
+                            <constraint firstItem="gwn-TR-2hP" firstAttribute="leading" secondItem="edD-Iw-Ja3" secondAttribute="leading" id="hoz-0V-E0Z"/>
+                            <constraint firstItem="tkJ-fD-lhi" firstAttribute="top" secondItem="edD-Iw-Ja3" secondAttribute="top" constant="34" id="ied-96-JFh"/>
+                            <constraint firstAttribute="trailing" secondItem="tkJ-fD-lhi" secondAttribute="trailing" id="s5z-We-hU4"/>
+                            <constraint firstAttribute="bottom" secondItem="DMG-Ly-Sd6" secondAttribute="bottom" constant="8" id="sXI-tP-z03"/>
+                            <constraint firstItem="gwn-TR-2hP" firstAttribute="top" secondItem="edD-Iw-Ja3" secondAttribute="top" id="wwC-Dg-LQU"/>
+                            <constraint firstItem="DMG-Ly-Sd6" firstAttribute="top" secondItem="gwn-TR-2hP" secondAttribute="bottom" constant="8" id="x1j-iU-9AM"/>
+                            <constraint firstAttribute="trailing" secondItem="DMG-Ly-Sd6" secondAttribute="trailing" constant="8" id="x2R-vf-a8C"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="edD-Iw-Ja3" secondAttribute="trailing" id="4VV-WJ-O2R"/>
+                    <constraint firstItem="edD-Iw-Ja3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NKh-Zs-FAy"/>
+                    <constraint firstItem="edD-Iw-Ja3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iST-5y-Ynd"/>
+                    <constraint firstAttribute="bottom" secondItem="edD-Iw-Ja3" secondAttribute="bottom" id="oz4-gm-ouc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="chartView" destination="DMG-Ly-Sd6" id="XCN-oB-zin"/>
+                <outlet property="hydrateBtn" destination="cwM-at-h4U" id="aPa-ds-F0W"/>
+                <outlet property="mainViewOfChart" destination="edD-Iw-Ja3" id="Q6Z-qH-eCo"/>
+                <outlet property="weightBtn" destination="e90-3y-7zx" id="Dgo-Wg-cJU"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="71.651785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_barWaterDrop" width="20" height="22.5"/>
+        <image name="ic_barWeight" width="20" height="20"/>
+        <namedColor name="chartTopBtn">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="chartViewBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
