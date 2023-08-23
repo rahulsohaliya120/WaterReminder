@@ -26,8 +26,8 @@ class HomePresenter: ViewToPresenterHomeProtocol {
         router?.pushToSettingVC(name: name, withIdentifier: withIdentifier, navigationController: navigationController)
     }
     
-    func fetchingDataBaseData(title: String, message: String, vc: HomeVC, wave: WaveAnimationView, updateProgressLabel: UILabel, completedMlLabel: UILabel) {
-        interactor?.fetchData(title: title, message: message, vc: vc, wave: wave, updateProgressLabel: updateProgressLabel, completedMlLabel: completedMlLabel)
+    func fetchingDataBaseData(title: String, message: String, vc: HomeVC, wave: WaveAnimationView, updateProgressLabel: UILabel, completedMlLabel: UILabel, bottleView: BottleMaskView) {
+        interactor?.fetchData(title: title, message: message, vc: vc, wave: wave, updateProgressLabel: updateProgressLabel, completedMlLabel: completedMlLabel, bottleView: bottleView)
     }
     
     func drinkBtnCustomization(drinkBtn: UIButton) {
@@ -38,8 +38,8 @@ class HomePresenter: ViewToPresenterHomeProtocol {
         tabbarView.layer.cornerRadius = 20
     }
     
-    func fetchLastWaterAmountData(updateProgressLabel: UILabel, completedMlLabel: UILabel) {
-        interactor?.getLastDataFromDatabase(updateProgressLabel: updateProgressLabel, completedMlLabel: completedMlLabel)
+    func fetchLastWaterAmountData(updateProgressLabel: UILabel, completedMlLabel: UILabel, bottleView: BottleMaskView) {
+        interactor?.getLastDataFromDatabase(updateProgressLabel: updateProgressLabel, completedMlLabel: completedMlLabel, bottleView: bottleView)
     }
     
     func waveAnimationCustomization(wave: WaveAnimationView, bottleView: UIView) {

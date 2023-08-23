@@ -58,7 +58,7 @@ class HomeVC: UIViewController {
     }
     
     func getLastDataFromDatabase() {
-        presenter?.fetchLastWaterAmountData(updateProgressLabel: updateProgressLabel, completedMlLabel: completedMlLabel)
+        presenter?.fetchLastWaterAmountData(updateProgressLabel: updateProgressLabel, completedMlLabel: completedMlLabel, bottleView: bottleView)
     }
     
     func waveAnimationCustomization() {
@@ -91,7 +91,7 @@ class HomeVC: UIViewController {
     // MARK: - Actions
     
     @IBAction func drinkBtnTapped(_ sender: UIButton) {
-        presenter?.fetchingDataBaseData(title: "Water Details", message: "Please add water in ml", vc: self, wave: wave, updateProgressLabel: updateProgressLabel, completedMlLabel: completedMlLabel)
+        presenter?.fetchingDataBaseData(title: "Water Details", message: "Please add water in ml", vc: self, wave: wave, updateProgressLabel: updateProgressLabel, completedMlLabel: completedMlLabel, bottleView: bottleView)
     }
     
     @IBAction func graphBtnTapped(_ sender: UIButton) {

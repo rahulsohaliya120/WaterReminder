@@ -15,7 +15,7 @@ class HomeInteractor: PresenterToInteractorHomeProtocol {
     // MARK: Properties
     var presenter: InteractorToPresenterHomeProtocol?
     
-    func fetchData(title: String, message: String, vc: HomeVC, wave: WaveAnimationView, updateProgressLabel: UILabel, completedMlLabel: UILabel) {
+    func fetchData(title: String, message: String, vc: HomeVC, wave: WaveAnimationView, updateProgressLabel: UILabel, completedMlLabel: UILabel, bottleView: BottleMaskView) {
         
         let alert = UIAlertController(title: "Water Details", message: "Please add water in ml", preferredStyle: .alert)
         alert.addTextField { field in
@@ -83,15 +83,25 @@ class HomeInteractor: PresenterToInteractorHomeProtocol {
             let newProgress = Float(totalWaterConsumed) / 4000.0
             wave.progress = newProgress
             updateProgressLabel.text = "\(totalWaterConsumed) ml"
+            if updatedData?.amountInMilliliters == 0 {
+                bottleView.isHidden = true
+            } else {
+                bottleView.isHidden = false
+            }
         }))
         vc.present(alert, animated: true, completion: nil)
     }
     
-    func getLastDataFromDatabase(updateProgressLabel: UILabel, completedMlLabel: UILabel) {
+    func getLastDataFromDatabase(updateProgressLabel: UILabel, completedMlLabel: UILabel, bottleView: BottleMaskView) {
         let realm = try! Realm()
         let getData = realm.objects(WaterAmount.self).last
 
         updateProgressLabel.text = "\(getData?.amountInMilliliters ?? 0) ml"
         completedMlLabel.text = "\(getData?.amountInMilliliters ?? 0) ml"
+        if getData?.amountInMilliliters == 0 {
+            bottleView.isHidden = true
+        } else {
+            bottleView.isHidden = false
+        }
     }
 }

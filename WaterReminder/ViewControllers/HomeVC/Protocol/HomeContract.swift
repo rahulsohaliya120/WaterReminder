@@ -25,10 +25,10 @@ protocol ViewToPresenterHomeProtocol {
     
     func navigateToHistoryVC(name: String, withIdentifier: String, navigationController: UINavigationController)
     func navigateToSettingVC(name: String, withIdentifier: String, navigationController: UINavigationController)
-    func fetchingDataBaseData(title: String, message: String, vc: HomeVC, wave: WaveAnimationView, updateProgressLabel: UILabel, completedMlLabel: UILabel)
+    func fetchingDataBaseData(title: String, message: String, vc: HomeVC, wave: WaveAnimationView, updateProgressLabel: UILabel, completedMlLabel: UILabel, bottleView: BottleMaskView)
     func drinkBtnCustomization(drinkBtn: UIButton)
     func tabbarConfiguration(tabbarView: UIView)
-    func fetchLastWaterAmountData(updateProgressLabel: UILabel, completedMlLabel: UILabel)
+    func fetchLastWaterAmountData(updateProgressLabel: UILabel, completedMlLabel: UILabel, bottleView: BottleMaskView)
     func waveAnimationCustomization(wave: WaveAnimationView, bottleView: UIView)
     func updateWaveAnimationProgress(wave: WaveAnimationView, updateProgressLabel: UILabel, bottleView: BottleMaskView)
     func updateWaterAmount(updateProgressLabel: UILabel, completedMlLabel: UILabel, vc: HomeVC, bottleView: BottleMaskView)
@@ -40,8 +40,8 @@ protocol PresenterToInteractorHomeProtocol {
     
     var presenter: InteractorToPresenterHomeProtocol? { get set }
     
-    func fetchData(title: String, message: String, vc: HomeVC, wave: WaveAnimationView, updateProgressLabel: UILabel, completedMlLabel: UILabel)
-    func getLastDataFromDatabase(updateProgressLabel: UILabel, completedMlLabel: UILabel)
+    func fetchData(title: String, message: String, vc: HomeVC, wave: WaveAnimationView, updateProgressLabel: UILabel, completedMlLabel: UILabel, bottleView: BottleMaskView)
+    func getLastDataFromDatabase(updateProgressLabel: UILabel, completedMlLabel: UILabel, bottleView: BottleMaskView)
 }
 
 
